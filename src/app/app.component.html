@@ -1,7 +1,67 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Under Construction" src="https://upload.wikimedia.org/wikipedia/commons/c/c7/UnderConstruction.svg">
-</div>
+<mat-sidenav-container>
+  <mat-sidenav  #sidenav role="navigation">
+   <mat-nav-list>
+    <a mat-list-item
+        routerLink="/">
+      <mat-icon class="icon">home</mat-icon>
+        <span class="label">Home</span>
+    </a>
+    <a mat-list-item
+      routerLink="/policy">
+      <mat-icon class="icon">home_work</mat-icon>
+      <span class="label">About us</span>
+    </a>
+    <a  mat-list-item
+        type="button">
+      <mat-icon class="icon">ondemand_video</mat-icon>
+      <span class="label">Video</span>
+    </a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+     <div fxHide.gt-xs>
+       <button mat-icon-button (click)="sidenav.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+    </div>
+     <div>
+       <a routerLink="/">
+          静岡県ディスクゴルフ協会
+       </a>
+     </div>
+     <div fxFlex fxLayout fxLayoutAlign="flex-end"  fxHide.xs>
+        <ul fxLayout fxLayoutGap="20px" class="navigation-items">
+            <li>
+              <a
+                routerLink="/">
+                  <mat-icon class="icon">home</mat-icon>
+                  <span class="label">Home</span>
+              </a>
+            </li>
+            <li>
+                <a
+                  routerLink="/policy">
+                    <mat-icon class="icon">home_work</mat-icon>
+                    <span class="label">About us</span>
+                </a>
+            </li>
+            <li>
+                <a>
+                  <mat-icon class="icon">ondemand_video</mat-icon>
+                  <span class="label">Video</span>
+                 </a>
+            </li>
+        </ul>
+     </div>
+    </mat-toolbar>
+    <main>
+      <router-outlet></router-outlet>
+    </main>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+<footer>
+    <div fxLayout="row" fxLayoutAlign="center center">
+        <h4>Copyright © 2019. JPDGA-SHIZUOKA. All Right Reserved.</h4>
+    </div>
+</footer>

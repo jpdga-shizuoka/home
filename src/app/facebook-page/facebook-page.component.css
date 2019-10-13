@@ -1,0 +1,11 @@
+.facebook-card {
+    max-width: 500px;
+    margin: 0 auto;
+}
+.facebook-card > .fb-page {
+    width: 100%;
+}
+.facebook-card > .fb-page > span,
+.facebook-card iframe {
+    width: 100% !important;
+}
