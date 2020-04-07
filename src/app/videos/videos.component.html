@@ -1,7 +1,7 @@
 <div class="content">
   <ng-template ngFor let-video [ngForOf]="videos">
-    <div class="card">
-      <img class="card-image" src="{{getThumbnail(video)}}" alt="video.title"/>
+    <div class="card" (click)="onClick(video)">
+      <img class="card-image" src="{{getThumbnailUrl(video)}}" alt="video.title"/>
       <div class="card-header">
         <div class="card-title">
           {{video.title}}

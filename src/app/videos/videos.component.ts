@@ -1,4 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { MatBottomSheet } from '@angular/material/bottom-sheet';
+
+import { VideoSheetComponent } from '../video-sheet.component';
+
+import { VIDEO } from '../models';
 
 const VIDEOS = [{
   id: 'Mgg6jesKS_0',
@@ -54,16 +59,29 @@ const VIDEOS = [{
 })
 export class VideosComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private videoSheet: MatBottomSheet,
+  ) {}
 
   ngOnInit(): void {
+    // This code loads the IFrame Player API code asynchronously, according to the instructions at
+    // https://developers.google.com/youtube/iframe_api_reference#Getting_Started
+    const tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+    document.body.appendChild(tag);
   }
 
   get videos() {
     return VIDEOS;
   }
 
-  getThumbnail(video) {
+  getThumbnailUrl(video: VIDEO) {
     return `https://img.youtube.com/vi/${video.id}/0.jpg`;
+  }
+
+  onClick(video: VIDEO) {
+    this.videoSheet.open(VideoSheetComponent, {
+      data: video
+    });
   }
 }
