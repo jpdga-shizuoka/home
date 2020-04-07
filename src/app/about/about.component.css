@@ -1,0 +1,61 @@
+.content {
+  display: flex;
+  margin: 10px auto 10px;
+  padding: 0 16px;
+  max-width: 960px;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.card {
+  width: 320px;
+  /* height: 160px; */
+  margin: 0 8px 16px;
+  padding: 16px;
+  /* display: flex;
+  flex-direction: row; */
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+.container .card:not(:last-child) {
+  /* margin-right: 0; */
+}
+
+.container .card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 17px rgba(black, 0.35);
+}
+
+.github-card-img img {
+  display: block;
+  margin: auto;
+  width: 128px;
+  padding: 10px 0 0 0;
+}
+
+@media screen and (max-width: 767px) {
+
+  .content {
+    padding: 0 8px;
+  }
+
+  .container > *:not(.circle-link) {
+    width: 100%;
+  }
+
+  .card {
+    /* height: 16px; */
+    margin: 4px 0;
+  }
+}

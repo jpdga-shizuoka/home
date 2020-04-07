@@ -77,3 +77,12 @@ footer a {
 .toolbar #twitter-logo:hover {
   opacity: 0.8;
 }
+
+.my-align {
+  display: inline-flex;
+  vertical-align: middle;
+}
+.my-align mat-icon {
+  margin-left: 5px;
+  margin-right: 5px;
+}

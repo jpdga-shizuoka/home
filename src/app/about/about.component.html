@@ -1,1 +1,79 @@
-<p>about works!</p>
+<div class="content">
+  <h4>
+    <a class="my-align" (click)="back()">
+      <mat-icon>arrow_back</mat-icon>{{title}}
+    </a>
+  </h4>
+  <div class="container">
+    <mat-card class="card">
+      <mat-card-header>
+        <mat-card-title>静岡県ディスクゴルフ協会</mat-card-title>
+      </mat-card-header>
+      <img mat-card-image src="assets/img/kodomonokuni.jpg">
+      <mat-card-content>
+        <p>
+          静岡県ディスクゴルフ協会は、ディスクゴルフ競技の普及を目的として活動しています。
+        </p>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card class="card">
+      <mat-card-header>
+        <mat-card-title>運用方式</mat-card-title>
+      </mat-card-header>
+      <div class="github-card-img">
+        <img mat-card-image src="assets/img/github.svg">
+      </div>
+      <mat-card-content>
+        <p>
+          本サイトは GitHub が提供する
+          <a href="https://pages.github.com">GitHub Pages</a>
+          を利用して運用しています。
+          <a href="https://help.github.com/ja/github/site-policy/github-privacy-statement">
+            Githubのプライバシーポリシー
+          </a> もご参照ください。
+        </p>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card class="card">
+      <mat-card-header>
+        <mat-card-title>公開プロジェクト</mat-card-title>
+      </mat-card-header>
+      <div class="github-card-img">
+        <img mat-card-image src="assets/img/github.svg">
+      </div>
+      <mat-card-content>
+        <p>
+          本サイトはオープンソースプロジェクトとして
+          <a href="https://github.com/jpdga-shizuoka/ssa-round-ratings">Github</a>
+          に公開されております。
+        </p>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card class="card">
+      <mat-card-header>
+        <mat-card-title>ソフトウェアプラットフォーム</mat-card-title>
+      </mat-card-header>
+      <div class="github-card-img">
+        <img alt="Angular Logo"
+          src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg=="
+        />
+      </div>
+      <mat-card-content>
+        <p>
+          本サイトは以下のオープンソースソフトウェアを主に利用して構築されました:
+        </p>
+        <table class="oss-table">
+          <tbody>
+            <tr>
+              <td>Web Application Platform:</td>
+              <td><a href="https://angular.io">Angular</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
