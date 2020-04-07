@@ -1,0 +1,15 @@
+<div class="content">
+  <ng-template ngFor let-video [ngForOf]="videos">
+    <div class="card">
+      <img class="card-image" src="{{getThumbnail(video)}}" alt="video.title"/>
+      <div class="card-header">
+        <div class="card-title">
+          {{video.title}}
+        </div>
+        <div class="card-subtitle">
+          {{video.subtitle}}
+        </div>
+      </div>
+    </div>
+  </ng-template>
+</div>
