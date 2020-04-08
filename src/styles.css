@@ -1,11 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
+html, body {
+  height: 100%;
+  font-size: 16px;
+}
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 :host {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 14px;
+  font-size: 16px;
   color: #333;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
@@ -99,5 +102,15 @@ footer a {
 @media screen and (max-width: 767px) {
   .content {
     padding: 0 8px;
+  }
+}
+@media screen and (max-width: 413px) {
+  html, body {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 374px) {
+  html, body {
+    font-size: 12px;
   }
 }

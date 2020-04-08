@@ -1,5 +1,7 @@
 .contaner {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .card {
@@ -13,12 +15,12 @@
 
 .card:hover {
   transform: translateY(-3px);
-
 }
 
 .card-image {
-  width: 160px;
-  height: 90px;
+  --width: calc(calc(100% - 12px) / 2.3 );
+  width: var(--width);
+  height: calc(calc(var(--width) * 9) / 16);
   object-fit: cover;
   border-radius: 6px 0 0 6px;
 }
@@ -28,14 +30,33 @@
 }
 
 .card-title {
-  font-size: 0.84rem;
+  font-size: 1rem;
   font-weight: bold;
+  margin: 4px 0;
 }
 
 .card-subtitle {
-  font-size: 0.7rem;
+  font-size: 0.9rem;
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 150%;
 }
 
 .description p {
   padding: 0 6px;
+}
+
+@media screen and (min-width: 768px) {
+  .description {
+    width: 400px;
+  }
+  .content .description {
+    margin: 0 auto;
+  }
+  .card {
+    width: 360px;
+    margin-bottom: 16px;
+  }
 }

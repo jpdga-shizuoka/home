@@ -44,7 +44,7 @@ export class VideosComponent implements OnInit {
   }
 
   getThumbnailUrl(video: VIDEO) {
-    return `https://img.youtube.com/vi/${video.id}/0.jpg`;
+    return `https://img.youtube.com/vi/${video.id}/mqdefault.jpg`;
   }
 
   onClick(video: VIDEO) {
