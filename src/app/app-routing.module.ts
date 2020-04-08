@@ -45,11 +45,35 @@ const routes: Routes = [
     category: 'letsplaydiscgolf',
   }},
   { path: 'videos/thisisdiscgolf', component: VideosComponent, data: {
-    title: "これがディスクゴルフだ",
+    title: "これがディスクゴルフだ!",
     description: `<p>コースデビューしてもしなくても, 世界のトップアスリートのプレーをあらためて見てみよう!</p>
                   <p>オリンピック競技候補に上がるのも納得のプレーばかり!
-                  もう信じられな〜い😱</p>`,
+                  もう信じられな〜い!!
+                  </p>
+                  <p>次は: <a href="videos/majors">これが世界だ</a>
+                  </p>`,
     category: 'thisisdiscgolf',
+  }},
+  { path: 'videos/majors', component: VideosComponent, data: {
+    title: "これが世界だ!",
+    description: `<p>ゴルフと同じようにディスクゴルフにもプロツアーがあって,
+                  たくさんの大会が世界中で行われているよ.</p>
+                  <p>週末の四日間を使って,
+                  18ホールを1ラウンド, 1日1ラウンド行い,
+                  計4ラウンド/72ホールで優勝を争う大会が欧米では多いね.</p>
+                  <p>またメジャーと呼ばれる大会もゴルフやテニスと同じようにあるんだ;
+                    <ul>
+                      <li>USディスクゴルフチャンピオンシップ (通称USDGC)</li>
+                      <li>PDGAワールドディスクゴルフチャンピオンシップ (通称Pro Worlds)</li>
+                      <li>ヨーロッパオープン</li>
+                    </ul>
+                  </p>
+                  <p>気が向けばゴルフのテレビ中継のつもりで,
+                  メジャー大会の決勝最終9ホールを見てみよう.
+                  解説は英語だけどルールは簡単なので,
+                  試合の様子や雰囲気は伝わると思うんだ.
+                  </p>`,
+    category: 'majors',
   }},
 ];
 
