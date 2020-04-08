@@ -1,5 +1,5 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { Component, OnInit, ViewEncapsulation, HostListener } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 import { MatBottomSheet } from '@angular/material/bottom-sheet';
 
 import { Observable } from 'rxjs';
@@ -23,11 +23,12 @@ export class VideosComponent implements OnInit {
   category: string;
 
   constructor(
-    private route: ActivatedRoute,
+    private router: Router,
     private videoSheet: MatBottomSheet,
     private videosService: VideosService,
+    route: ActivatedRoute,
   ) {
-    const snapshot = this.route.snapshot;
+    const snapshot = route.snapshot;
     this.title = snapshot.data.title;
     this.description = snapshot.data.description;
     this.category = snapshot.data.category;
@@ -51,5 +52,21 @@ export class VideosComponent implements OnInit {
     this.videoSheet.open(VideoSheetComponent, {
       data: video
     });
+  }
+
+  //
+  // https://stackoverflow.com/questions/59706767/cant-render-routerlink-in-innerhtml-in-angular
+  //
+  @HostListener("click", ['$event'])
+  onAnchorClick(event: MouseEvent) {
+    // If we don't have an anchor tag, we don't need to do anything.
+    if (event.target instanceof HTMLAnchorElement === false) {
+      return;
+    }
+    // Prevent page from reloading
+    event.preventDefault();
+    let target = <HTMLAnchorElement>event.target;
+    // Navigate to the path in the link
+    this.router.navigate([target.pathname]);
   }
 }
