@@ -1,5 +1,7 @@
 <div class="content">
-  <ng-template ngFor let-video [ngForOf]="videos">
+  <h1>{{title}}</h1>
+  <p>{{description}}</p>
+  <ng-template ngFor let-video [ngForOf]="videos | async">
     <div class="card" (click)="onClick(video)">
       <img class="card-image" src="{{getThumbnailUrl(video)}}" alt="video.title"/>
       <div class="card-header">
