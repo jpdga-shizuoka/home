@@ -16,7 +16,7 @@ const routes: Routes = [
                   <p>そしたら, さっそくコースに出かけよう!
                   周りの人にぶつけないように気を付けさえすれば,
                   こまかいルールなんて知らなくても大丈夫!</p>
-                  <p>Next: <a href="videos/letsplaydiscgolf">ディスクゴルフ入門</a></p>
+                  <p>次は: <a href="videos/letsplaydiscgolf">ディスクゴルフ入門</a></p>
                   <p>(提供:
                     <a target="_blank" rel="noopener" href="https://www.youtube.com/channel/UCKRGfUYpPhad8UMv0n_RLOg">
                       JPDGA Movie
@@ -31,7 +31,12 @@ const routes: Routes = [
     title: "ディスクゴルフ入門",
     description: `<p>日本チャンピオン菊地哲也プロによる入門チャンネルをチェックしよう!
                   これを見たらもうコースデビューするしか無い!</p>
-                  <p>Next: <a href="videos/thisisdiscgolf">これがディスクゴルフだ</a></p>
+                  <p>次は: <a href="videos/thisisdiscgolf">これがディスクゴルフだ</a></p>
+                  <p>参考:
+                    <a target="_blank" rel="noopener" href="https://innova-hero.jp/discgolf/">
+                      基本ルール (INNOVA JAPAN)
+                    </a>
+                  </p>
                   <p>(提供:
                     <a target="_blank" rel="noopener" href="https://www.youtube.com/channel/UCIT1UG20GhW2E23fPnM0Jtg">
                       INNOVA JAPAN Disc Golf TV
