@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { MatBottomSheet } from '@angular/material/bottom-sheet';
 
@@ -12,7 +12,8 @@ import { VIDEO } from '../models';
 @Component({
   selector: 'app-videos',
   templateUrl: './videos.component.html',
-  styleUrls: ['./videos.component.css']
+  styleUrls: ['./videos.component.css'],
+  encapsulation: ViewEncapsulation.None,
 })
 export class VideosComponent implements OnInit {
 

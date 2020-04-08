@@ -9,7 +9,6 @@
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   transition: all 0.2s ease-in-out;
-
 }
 
 .card:hover {
@@ -31,10 +30,12 @@
 .card-title {
   font-size: 0.84rem;
   font-weight: bold;
-
 }
 
 .card-subtitle {
   font-size: 0.7rem;
+}
 
+.description p {
+  padding: 0 6px;
 }
