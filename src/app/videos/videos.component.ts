@@ -66,12 +66,15 @@ export class VideosComponent implements OnInit {
     // Prevent page from reloading
     event.preventDefault();
     const anchor = <HTMLAnchorElement>event.target;
-    if (anchor.hostname != 'localhost') {
-      // https://stackoverflow.com/questions/46147949/using-rel-noopener-in-window-open
+    if (isExternal(anchor)) {
       window.open(anchor.href, '_blank', 'noopener');
     } else {
       // Navigate to the path in the link
       this.router.navigate([anchor.pathname]);
     }
   }
+}
+
+function isExternal(anchor: HTMLAnchorElement): boolean {
+  return anchor.host !== location.host;
 }
