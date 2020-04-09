@@ -3,10 +3,12 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AboutComponent } from './about/about.component';
+import { GoGamesComponent } from './go-games/go-games.component';
 import { VideosComponent } from './videos/videos.component';
 
 const routes: Routes = [
   { path: '', component: DashboardComponent },
+  { path: 'gogames', component: GoGamesComponent },
   { path: 'about', component: AboutComponent },
   { path: 'whatsdiscgolf', component: VideosComponent, data: {
     title: "ディスクゴルフってなに?",
@@ -68,11 +70,12 @@ const routes: Routes = [
                       <li>ヨーロッパ•オープン</li>
                     </ul>
                   </p>
-                  <p>気が向けばゴルフのテレビ中継のつもりで,
+                  <p>気が向いたらゴルフのテレビ中継のつもりで,
                   メジャー大会の決勝最終9ホールを見てみよう.
                   解説は英語だけどルールは簡単なので,
                   試合の様子, 雰囲気や醍醐味は伝わると思うんだ.
                   </p>
+                  <p>次は: <a href="gogames">試合に出よう!</a></p>
                   <p>(提供:
                     <a target="_blank" rel="noopener" href="https://www.youtube.com/channel">
                       YouTube

@@ -24,6 +24,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { VideoSheetComponent } from './video-sheet.component';
 import { AboutComponent } from './about/about.component';
 import { VideosComponent } from './videos/videos.component';
+import { GoGamesComponent } from './go-games/go-games.component';
 
 
 @NgModule({
@@ -34,6 +35,7 @@ import { VideosComponent } from './videos/videos.component';
     AboutComponent,
     VideosComponent,
     VideoSheetComponent,
+    GoGamesComponent,
   ],
   imports: [
     BrowserModule,
