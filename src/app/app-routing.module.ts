@@ -8,7 +8,7 @@ import { VideosComponent } from './videos/videos.component';
 const routes: Routes = [
   { path: '', component: DashboardComponent },
   { path: 'about', component: AboutComponent },
-  { path: 'videos/whatsdiscgolf', component: VideosComponent, data: {
+  { path: 'whatsdiscgolf', component: VideosComponent, data: {
     title: "ディスクゴルフってなに?",
     description: `<p>誰にでもできるお遊びでもあり, そして競技としても楽しめる奥が深〜いスポーツだよ!
                   まずはビデオを見て様子を見てみよう.</p>
@@ -16,7 +16,7 @@ const routes: Routes = [
                   <p>そしたら, さっそくコースに出かけよう!
                   周りの人にぶつけないように気を付けさえすれば,
                   こまかいルールなんて知らなくても大丈夫!</p>
-                  <p>次は: <a href="videos/letsplaydiscgolf">ディスクゴルフ入門</a></p>
+                  <p>次は: <a href="letsplaydiscgolf">ディスクゴルフ入門</a></p>
                   <p>(提供:
                     <a target="_blank" rel="noopener" href="https://www.youtube.com/channel/UCKRGfUYpPhad8UMv0n_RLOg">
                       JPDGA Movie
@@ -27,11 +27,11 @@ const routes: Routes = [
                   </p>`,
     category: 'whatsdiscgolf',
   }},
-  { path: 'videos/letsplaydiscgolf', component: VideosComponent, data: {
+  { path: 'letsplaydiscgolf', component: VideosComponent, data: {
     title: "ディスクゴルフ入門",
     description: `<p>日本チャンピオン菊地哲也プロによる入門チャンネルをチェックしよう!
                   これを見たらもうコースデビューするしか無い!</p>
-                  <p>次は: <a href="videos/thisisdiscgolf">これがディスクゴルフだ</a></p>
+                  <p>次は: <a href="thisisdiscgolf">これがディスクゴルフだ</a></p>
                   <p>参考:
                     <a target="_blank" rel="noopener" href="https://innova-hero.jp/discgolf/">
                       基本ルール (INNOVA JAPAN)
@@ -44,17 +44,17 @@ const routes: Routes = [
                   </p>`,
     category: 'letsplaydiscgolf',
   }},
-  { path: 'videos/thisisdiscgolf', component: VideosComponent, data: {
+  { path: 'thisisdiscgolf', component: VideosComponent, data: {
     title: "これがディスクゴルフだ!",
     description: `<p>コースデビューしてもしなくても, 世界のトップアスリートのプレーをあらためて見てみよう!</p>
                   <p>オリンピック競技候補に上がるのも納得のプレーばかり!
                   もう信じられな〜い!!
                   </p>
-                  <p>次は: <a href="videos/majors">これが世界だ</a>
+                  <p>次は: <a href="majors">これが世界だ</a>
                   </p>`,
     category: 'thisisdiscgolf',
   }},
-  { path: 'videos/majors', component: VideosComponent, data: {
+  { path: 'majors', component: VideosComponent, data: {
     title: "これが世界だ!",
     description: `<p>ゴルフと同じようにディスクゴルフにもプロツアーがあって,
                   たくさんの大会が世界中で行われているよ.</p>
