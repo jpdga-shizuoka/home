@@ -17,6 +17,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
+import { MatExpansionModule } from '@angular/material/expansion';
 
 import { DeviceDetectorModule } from 'ngx-device-detector';
 
@@ -26,6 +27,7 @@ import { AboutComponent } from './about/about.component';
 import { VideosComponent } from './videos/videos.component';
 import { GoGamesComponent } from './go-games/go-games.component';
 import { KoshukaiComponent } from './koshukai/koshukai.component';
+import { PrivacyComponent } from './privacy/privacy.component';
 
 
 @NgModule({
@@ -38,6 +40,7 @@ import { KoshukaiComponent } from './koshukai/koshukai.component';
     VideoSheetComponent,
     GoGamesComponent,
     KoshukaiComponent,
+    PrivacyComponent,
   ],
   imports: [
     BrowserModule,
@@ -53,6 +56,7 @@ import { KoshukaiComponent } from './koshukai/koshukai.component';
     MatGridListModule,
     MatCardModule,
     MatMenuModule,
+    MatExpansionModule,
     MatBottomSheetModule,
     DeviceDetectorModule.forRoot(),
   ],

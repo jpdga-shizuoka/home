@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AboutComponent } from './about/about.component';
+import { PrivacyComponent } from './privacy/privacy.component';
 import { GoGamesComponent } from './go-games/go-games.component';
 import { KoshukaiComponent } from './koshukai/koshukai.component';
 import { VideosComponent } from './videos/videos.component';
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'gogames', component: GoGamesComponent },
   { path: 'koshukai', component: KoshukaiComponent },
   { path: 'about', component: AboutComponent },
+  { path: 'privacy', component: PrivacyComponent },
   { path: 'whatsdiscgolf', component: VideosComponent, data: {
     title: "ディスクゴルフってなに?",
     description: `<p>誰にでもできるお遊びでもあり, そして競技としても楽しめる奥が深〜いスポーツだよ!
