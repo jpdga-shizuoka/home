@@ -11,7 +11,7 @@ const routes: Routes = [
   { path: 'whatsdiscgolf', component: VideosComponent, data: {
     title: "ディスクゴルフってなに?",
     description: `<p>誰にでもできるお遊びでもあり, そして競技としても楽しめる奥が深〜いスポーツだよ!
-                  まずはビデオを見て様子を見てみよう.</p>
+                  まずはビデオで様子を見てみよう.</p>
                   <p>おもしろそうって思ってくれました?</p>
                   <p>そしたら, さっそくコースに出かけよう!
                   周りの人にぶつけないように気を付けさえすれば,
@@ -72,6 +72,11 @@ const routes: Routes = [
                   メジャー大会の決勝最終9ホールを見てみよう.
                   解説は英語だけどルールは簡単なので,
                   試合の様子, 雰囲気や醍醐味は伝わると思うんだ.
+                  </p>
+                  <p>(提供:
+                    <a target="_blank" rel="noopener" href="https://www.youtube.com/channel">
+                      YouTube
+                    </a>)
                   </p>`,
     category: 'majors',
   }},
