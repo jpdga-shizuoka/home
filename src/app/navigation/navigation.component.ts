@@ -1,21 +1,42 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
-import { Observable } from 'rxjs';
-import { map, shareReplay } from 'rxjs/operators';
+import { Router, ActivatedRoute, NavigationEnd } from '@angular/router';
+import { Title, Meta } from '@angular/platform-browser';
+import {
+  isHandset,
+  subscribeMetaDescription,
+  MetaDescription,
+  Observable,
+  Subscription,
+} from '../utilities';
 
 @Component({
   selector: 'app-navigation',
   templateUrl: './navigation.component.html',
   styleUrls: ['./navigation.component.css']
 })
-export class NavigationComponent {
+export class NavigationComponent implements MetaDescription, OnInit, OnDestroy {
 
-  isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
-    .pipe(
-      map(result => result.matches),
-      shareReplay()
-    );
+  private metaSubscription: Subscription;
+  isHandset$: Observable<boolean>;
 
-  constructor(private breakpointObserver: BreakpointObserver) {}
+  constructor(
+    public ngActivatedRoute: ActivatedRoute,
+    public ngTitle: Title,
+    public ngMeta: Meta,
+    public ngRouter: Router,
+    breakpointObserver: BreakpointObserver,
+  ) {
+    this.isHandset$ = isHandset(breakpointObserver);
+  }
 
+  ngOnInit() {
+    this.metaSubscription = subscribeMetaDescription(this);
+  }
+
+  ngOnDestroy() {
+    if (this.metaSubscription) {
+      this.metaSubscription.unsubscribe();
+    }
+  }
 }

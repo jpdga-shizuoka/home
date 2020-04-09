@@ -5,15 +5,17 @@
       [opened]="(isHandset$ | async) === false">
     <mat-toolbar>Menu</mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item routerLink="/">Home</a>
-      <a mat-list-item routerLink="/whatsdiscgolf">ディスクゴルフってなに?</a>
-      <a mat-list-item routerLink="/letsplaydiscgolf">ディスクゴルフ入門</a>
-      <a mat-list-item routerLink="/thisisdiscgolf">これがディスクゴルフだ!</a>
-      <a mat-list-item routerLink="/majors">これが世界だ!</a>
-      <a mat-list-item routerLink="/gogames">試合に出よう!</a>
-      <a mat-list-item routerLink="/koshukai">講習会</a>
-      <a mat-list-item routerLink="/privacy">プライバシー•ポリシー</a>
-      <a mat-list-item routerLink="/about">当ウェブサイトについて</a>
+      <a mat-list-item routerLink="/"><mat-icon>home</mat-icon>ホーム</a>
+      <mat-divider></mat-divider>
+      <a mat-list-item routerLink="/whatsdiscgolf"><mat-icon>bookmark</mat-icon>ディスクゴルフってなに?</a>
+      <a mat-list-item routerLink="/letsplaydiscgolf"><mat-icon>bookmark</mat-icon>ディスクゴルフ入門</a>
+      <a mat-list-item routerLink="/thisisdiscgolf"><mat-icon>bookmark</mat-icon>これがディスクゴルフだ!</a>
+      <a mat-list-item routerLink="/majors"><mat-icon>bookmark</mat-icon>これが世界だ!</a>
+      <a mat-list-item routerLink="/gogames"><mat-icon>bookmark</mat-icon>試合に出よう!</a>
+      <a mat-list-item routerLink="/koshukai"><mat-icon>bookmark</mat-icon>講習会</a>
+      <mat-divider></mat-divider>
+      <a mat-list-item routerLink="/about"><mat-icon>info</mat-icon>当ウェブサイトについて</a>
+      <a mat-list-item routerLink="/privacy"><mat-icon>info</mat-icon>プライバシー•ポリシー</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
@@ -26,7 +28,7 @@
         *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span>home</span>
+      <span>静岡県ディスクゴルフ協会</span>
     </mat-toolbar>
 
     <!-- Add Content Here -->

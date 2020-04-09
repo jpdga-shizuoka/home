@@ -10,10 +10,26 @@ import { VideosComponent } from './videos/videos.component';
 
 const routes: Routes = [
   { path: '', component: DashboardComponent },
-  { path: 'gogames', component: GoGamesComponent },
-  { path: 'koshukai', component: KoshukaiComponent },
-  { path: 'about', component: AboutComponent },
-  { path: 'privacy', component: PrivacyComponent },
+  { path: 'gogames', component: GoGamesComponent, data: { metaDescription: {
+      title: '試合に出よう!',
+      description: 'ディスクゴルフの試合に出よう!',
+      keywords: '静岡県ディスクゴルフ協会,ディスクゴルフ,静岡県,試合,大会',
+  }}},
+  { path: 'koshukai', component: KoshukaiComponent, data: { metaDescription: {
+      title: 'ディスクゴルフ講習会について',
+      description: '静岡県ディスクゴルフ協会による講習会について',
+      keywords: '静岡県ディスクゴルフ協会,ディスクゴルフ,静岡県',
+  }}},
+  { path: 'about', component: AboutComponent, data: { metaDescription: {
+      title: '当ウェブサイトについて',
+      description: '静岡県ディスクゴルフ協会のウェブサイトについて',
+      keywords: '静岡県ディスクゴルフ協会,ディスクゴルフ,静岡県,ウェブサイト',
+  }}},
+  { path: 'privacy', component: PrivacyComponent, data: { metaDescription: {
+      title: 'プライバシー•ポリシーについて',
+      description: '静岡県ディスクゴルフ協会のプライバシー•ポリシー',
+      keywords: '静岡県ディスクゴルフ協会,ディスクゴルフ,静岡県,プライバシーポリシー',
+  }}},
   { path: 'whatsdiscgolf', component: VideosComponent, data: {
     title: "ディスクゴルフってなに?",
     description: `<p>誰にでもできるお遊びでもあり, そして競技としても楽しめる奥が深〜いスポーツだよ!
@@ -32,6 +48,11 @@ const routes: Routes = [
                     </a>)
                   </p>`,
     category: 'whatsdiscgolf',
+    metaDescription: {
+      title: "ディスクゴルフってなに?",
+      description: 'ディスクゴルフを紹介します',
+      keywords: '静岡県ディスクゴルフ協会,ディスクゴルフ,静岡県,ディスクゴルフの紹介',
+    }
   }},
   { path: 'letsplaydiscgolf', component: VideosComponent, data: {
     title: "ディスクゴルフ入門",
@@ -56,6 +77,11 @@ const routes: Routes = [
                     </a>)
                   </p>`,
     category: 'letsplaydiscgolf',
+    metaDescription: {
+      title: "ディスクゴルフ入門",
+      description: 'ビデオ講座によるディスクゴルフ入門',
+      keywords: '静岡県ディスクゴルフ協会,ディスクゴルフ,静岡県,ディスクゴルフ入門,ビデオ講座',
+    }
   }},
   { path: 'thisisdiscgolf', component: VideosComponent, data: {
     title: "これがディスクゴルフだ!",
@@ -66,6 +92,11 @@ const routes: Routes = [
                   <p>次は: <a href="majors">これが世界だ</a>
                   </p>`,
     category: 'thisisdiscgolf',
+    metaDescription: {
+      title: "これがディスクゴルフだ!",
+      description: 'トップアスリートによるディスクゴルフ競技の紹介',
+      keywords: '静岡県ディスクゴルフ協会,ディスクゴルフ,静岡県,トップアスリート',
+    }
   }},
   { path: 'majors', component: VideosComponent, data: {
     title: "これが世界だ!",
@@ -73,14 +104,15 @@ const routes: Routes = [
                   たくさんの大会が世界中で行われているよ.</p>
                   <p>週末の四日間を使って,
                   18ホールを1ラウンドとして1日1ラウンド行い,
-                  計4ラウンド/72ホールで優勝を争う大会が欧米では多いね.</p>
-                  <p>またメジャーと呼ばれる大会もゴルフやテニスと同じようにあるんだ;
-                    <ul>
-                      <li>USディスクゴルフ•チャンピオンシップ (通称USDGC)</li>
-                      <li>PDGAワールド•ディスクゴルフ•チャンピオンシップ (通称Pro Worlds)</li>
-                      <li>ヨーロッパ•オープン</li>
-                    </ul>
+                  計4ラウンド/72ホールで優勝を争う大会が欧米では多いね.
+                  また日本の公式戦では, その72ホールをギュッと2日にまとめて競技するんだ.
                   </p>
+                  <p>またメジャーと呼ばれる大会もゴルフやテニスと同じようにあるんだ;</p>
+                  <ul>
+                    <li>USディスクゴルフ•チャンピオンシップ (通称USDGC)</li>
+                    <li>PDGAワールド•ディスクゴルフ•チャンピオンシップ (通称Pro Worlds)</li>
+                    <li>ヨーロッパ•オープン</li>
+                  </ul>
                   <p>気が向いたらゴルフのテレビ中継のつもりで,
                   メジャー大会の決勝最終9ホールを見てみよう.
                   解説は英語だけどルールは簡単なので,
@@ -93,6 +125,11 @@ const routes: Routes = [
                     </a>)
                   </p>`,
     category: 'majors',
+    metaDescription: {
+      title: "これが世界だ!",
+      description: 'プロディスクゴルファーが集うディスクゴルフの世界的なメジャー大会の紹介',
+      keywords: '静岡県ディスクゴルフ協会,ディスクゴルフ,静岡県,トップアスリート,世界,メジャー,大会',
+    }
   }},
 ];
 
