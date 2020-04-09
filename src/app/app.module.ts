@@ -25,6 +25,7 @@ import { VideoSheetComponent } from './video-sheet.component';
 import { AboutComponent } from './about/about.component';
 import { VideosComponent } from './videos/videos.component';
 import { GoGamesComponent } from './go-games/go-games.component';
+import { KoshukaiComponent } from './koshukai/koshukai.component';
 
 
 @NgModule({
@@ -36,6 +37,7 @@ import { GoGamesComponent } from './go-games/go-games.component';
     VideosComponent,
     VideoSheetComponent,
     GoGamesComponent,
+    KoshukaiComponent,
   ],
   imports: [
     BrowserModule,

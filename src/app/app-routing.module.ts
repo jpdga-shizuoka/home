@@ -4,11 +4,13 @@ import { Routes, RouterModule } from '@angular/router';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AboutComponent } from './about/about.component';
 import { GoGamesComponent } from './go-games/go-games.component';
+import { KoshukaiComponent } from './koshukai/koshukai.component';
 import { VideosComponent } from './videos/videos.component';
 
 const routes: Routes = [
   { path: '', component: DashboardComponent },
   { path: 'gogames', component: GoGamesComponent },
+  { path: 'koshukai', component: KoshukaiComponent },
   { path: 'about', component: AboutComponent },
   { path: 'whatsdiscgolf', component: VideosComponent, data: {
     title: "ディスクゴルフってなに?",
@@ -31,13 +33,20 @@ const routes: Routes = [
   }},
   { path: 'letsplaydiscgolf', component: VideosComponent, data: {
     title: "ディスクゴルフ入門",
-    description: `<p>日本チャンピオン菊地哲也プロによる入門チャンネルをチェックしよう!
+    description: `<p>日本チャンピオン菊地哲也プロによるビデオ講座をチェックしよう!
                   これを見たらもうコースデビューするしか無い!</p>
                   <p>次は: <a href="thisisdiscgolf">これがディスクゴルフだ</a></p>
                   <p>参考:
-                    <a target="_blank" rel="noopener" href="https://innova-hero.jp/discgolf/">
-                      基本ルール (INNOVA JAPAN)
-                    </a>
+                    <ul>
+                      <li>
+                        <a target="_blank" rel="noopener" href="https://innova-hero.jp/discgolf/">
+                          基本ルール (INNOVA JAPAN)
+                        </a>
+                      </li>
+                      <li>
+                        <a href="koshukai">ディスクゴルフ講習会のお知らせ</a>
+                      </li>
+                    </ul>
                   </p>
                   <p>(提供:
                     <a target="_blank" rel="noopener" href="https://www.youtube.com/channel/UCIT1UG20GhW2E23fPnM0Jtg">
