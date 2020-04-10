@@ -99,7 +99,7 @@ const routes: Routes = [
     }
   }},
   { path: 'majors', component: VideosComponent, data: {
-    title: "これが世界だ!",
+    title: "これがプロの世界だ!",
     description: `<p>ゴルフと同じようにディスクゴルフにもプロツアーがあって,
                   たくさんの大会が世界中で行われているよ.</p>
                   <p>週末の四日間を使って,
@@ -126,8 +126,8 @@ const routes: Routes = [
                   </p>`,
     category: 'majors',
     metaDescription: {
-      title: "これが世界だ!",
-      description: 'プロディスクゴルファーが集うディスクゴルフの世界的なメジャー大会の紹介',
+      title: "これがプロの世界だ!",
+      description: '全てのプロディスクゴルファーが目指すメジャー大会の紹介',
       keywords: '静岡県ディスクゴルフ協会,ディスクゴルフ,静岡県,トップアスリート,世界,メジャー,大会',
     }
   }},
