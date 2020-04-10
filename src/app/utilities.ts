@@ -41,9 +41,9 @@ function updateDescription(mdo: MetaDescription, data?: any): void {
     return;
   }
   const md = data.metaDescription as MetaData;
-  const url = window.location.protocol + window.location.host;
+  const url = window.location.protocol + '//' + window.location.host;
   const image = url + '/assets/img/shizuoka-jpdga.002.png';
-  const href = window.location.href;
+  const href = url + window.location.pathname;
   mdo.ngTitle.setTitle(md.title);
   mdo.ngMeta.updateTag({ name: 'description', content: md.description });
   mdo.ngMeta.updateTag({ property: 'og:description', content: md.description });
