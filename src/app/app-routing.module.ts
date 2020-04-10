@@ -9,7 +9,11 @@ import { KoshukaiComponent } from './koshukai/koshukai.component';
 import { VideosComponent } from './videos/videos.component';
 
 const routes: Routes = [
-  { path: '', component: DashboardComponent },
+  { path: '', component: DashboardComponent, data: { metaDescription: {
+      title: '静岡県ディスクゴルフ協会',
+      description: '静岡県ディスクゴルフ協会ウェブサイト',
+      keywords: '静岡県ディスクゴルフ協会,ディスクゴルフ,静岡県',
+  }}},
   { path: 'gogames', component: GoGamesComponent, data: { metaDescription: {
       title: '試合に出よう!',
       description: 'ディスクゴルフの試合に出よう!',

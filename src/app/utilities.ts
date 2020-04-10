@@ -41,20 +41,17 @@ function updateDescription(mdo: MetaDescription, data?: any): void {
     return;
   }
   const md = data.metaDescription as MetaData;
-  const url = window.location.href;
+  const url = window.location.protocol + window.location.host;
+  const image = url + '/assets/img/shizuoka-jpdga.002.png';
+  const href = window.location.href;
   mdo.ngTitle.setTitle(md.title);
   mdo.ngMeta.updateTag({ name: 'description', content: md.description });
+  mdo.ngMeta.updateTag({ property: 'og:description', content: md.description });
   mdo.ngMeta.updateTag({ property: 'og:title', content: md.title });
-  mdo.ngMeta.updateTag({ property: 'og:type', content: md.type || 'article' });
-  mdo.ngMeta.updateTag({ property: 'og:url', content: md.url || url });
-
-  if (md.image) {
-    mdo.ngMeta.updateTag({ property: 'og:image', content: md.image });
-  }
+  mdo.ngMeta.updateTag({ property: 'og:type', content: md.type || 'website' });
+  mdo.ngMeta.updateTag({ property: 'og:url', content: md.url || href });
+  mdo.ngMeta.updateTag({ property: 'og:image', content: md.image || image});
   if (md.keywords) {
     mdo.ngMeta.updateTag({ name: 'keywords', content: md.keywords });
-  }
-  if (md.description) {
-    mdo.ngMeta.updateTag({ property: 'og:description', content: md.description });
   }
 }
