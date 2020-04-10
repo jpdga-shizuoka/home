@@ -11,7 +11,8 @@ import { VIDEO } from './models';
         <youtube-player
           [videoId]="id"
           [width]="width"
-          [height]="height">
+          [height]="height"
+          (stateChange)="onStateChange($event)">
         </youtube-player>
     </div>`,
   styles: [`
@@ -39,5 +40,14 @@ export class VideoSheetComponent {
 
   get id() {
     return this.video.id;
+  }
+
+  //
+  // https://developers.google.com/youtube/iframe_api_reference#Playback_status
+  //
+  onStateChange(event: any) {
+    if (event?.data === 0) {
+      this.bottomSheetRef.dismiss();
+    }
   }
 }
