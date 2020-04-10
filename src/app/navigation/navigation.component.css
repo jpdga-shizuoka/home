@@ -25,3 +25,18 @@
 .menu-active {
   background-color: #efe5fd;
 }
+
+img#background {
+  position: fixed;
+  bottom: 0px;
+  left: 200px;
+  z-index: -10;
+  width: calc(100% - 200px);
+  opacity: 0.4;
+}
+@media screen and (max-width: 767px) {
+  img#background {
+    left: 0px;
+    width: 100%;
+  }
+}
