@@ -22,3 +22,6 @@
 .mat-nav-list mat-icon {
   margin-right: 5px
 }
+.menu-active {
+  background-color: #efe5fd;
+}

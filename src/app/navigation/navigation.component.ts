@@ -1,7 +1,8 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy, ViewChild } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Router, ActivatedRoute, NavigationEnd } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
+import { MatSidenav } from '@angular/material/sidenav';
 import {
   isHandset,
   subscribeMetaDescription,
@@ -16,7 +17,7 @@ import {
   styleUrls: ['./navigation.component.css']
 })
 export class NavigationComponent implements MetaDescription, OnInit, OnDestroy {
-
+  @ViewChild('drawer') drawer: MatSidenav;
   private metaSubscription: Subscription;
   isHandset$: Observable<boolean>;
 
@@ -38,5 +39,13 @@ export class NavigationComponent implements MetaDescription, OnInit, OnDestroy {
     if (this.metaSubscription) {
       this.metaSubscription.unsubscribe();
     }
+  }
+
+  onClickLink() {
+    this.isHandset$.subscribe(result => {
+      if (result) {
+        this.drawer.close();
+      }
+    }).unsubscribe();
   }
 }
