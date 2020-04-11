@@ -38,7 +38,7 @@ mat-card img {
   object-fit: contain;
 }
 .mat-card-content p {
-  line-height: 175%;  
+  line-height: 175%;
 }
 .oss-table {
   font-size: small;
@@ -47,7 +47,7 @@ mat-card img {
   text-align: right;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .container {
     display: flex;
     flex-wrap: wrap;

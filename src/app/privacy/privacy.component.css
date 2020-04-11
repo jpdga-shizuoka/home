@@ -16,7 +16,7 @@ mat-divider {
   margin-top: 0;
   padding-bottom: 10px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .description {
     width: 550px;
   }
