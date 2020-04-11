@@ -1,3 +1,10 @@
+.content a::after {
+  content: "⮕";
+  padding-right: 3px;
+}
+.content a[target="_blank"]:not(.circle-link):not(.card)::after {
+  content: "🔗";
+}
 .mat-h1, .mat-typography h1 {
   margin-bottom: 6px;
 }
@@ -29,6 +36,15 @@ mat-card img {
   margin: auto;
   width: 40%;
   object-fit: contain;
+}
+.mat-card-content p {
+  line-height: 175%;  
+}
+.oss-table {
+  font-size: small;
+}
+.oss-table td:first-child {
+  text-align: right;
 }
 
 @media screen and (min-width: 768px) {
