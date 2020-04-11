@@ -90,10 +90,10 @@ const routes: Routes = [
   { path: 'thisisdiscgolf', component: VideosComponent, data: {
     title: "これがディスクゴルフだ!",
     description: `<p>コースデビューしてもしなくても, 世界のトップアスリートのプレーをあらためて見てみよう!</p>
-                  <p>オリンピック競技候補に上がるのも納得のプレーばかり!
+                  <p>オリンピック競技候補のウワサに上がるのも納得のプレーばかり!
                   もう信じられな〜い!!
                   </p>
-                  <p>次は: <a href="majors">これが世界だ</a>
+                  <p>次は: <a href="majors">これがプロの世界だ</a>
                   </p>`,
     category: 'thisisdiscgolf',
     metaDescription: {
