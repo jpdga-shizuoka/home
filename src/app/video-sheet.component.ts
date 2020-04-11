@@ -1,8 +1,10 @@
 import { Component, Inject } from '@angular/core';
 import { MatBottomSheetRef, MAT_BOTTOM_SHEET_DATA } from '@angular/material/bottom-sheet';
-import { DeviceDetectorService } from 'ngx-device-detector';
 
 import { VIDEO } from './models';
+
+const MAX_VIDEO_WIDTH = 640;
+const VIDEO_SIDE_PADDING = 16;
 
 @Component({
   selector: 'video-sheet',
@@ -15,27 +17,19 @@ import { VIDEO } from './models';
           (stateChange)="onStateChange($event)">
         </youtube-player>
     </div>`,
-  styles: [`
-    .video-view {
-      width: 100%;
-      text-align: center;
-      display: block;
-    }`],
 })
 export class VideoSheetComponent {
 
-  width = 640;
-  height = 390;
+  width: number;
+  height: number;
 
   constructor(
     @Inject(MAT_BOTTOM_SHEET_DATA) public video: VIDEO,
-    private deviceService: DeviceDetectorService,
     private bottomSheetRef: MatBottomSheetRef<VideoSheetComponent>,
   ) {
-    if (this.deviceService.isMobile()) {
-      this.width = 320;
-      this.height = 195;
-    }
+      const width = window.innerWidth - VIDEO_SIDE_PADDING*2;
+      this.width = Math.min(MAX_VIDEO_WIDTH, width);
+      this.height = this.width / 16 * 9;
   }
 
   get id() {

@@ -8,6 +8,8 @@
 
 .card {
   display: inline-flex;
+  width: calc(100% - 7px);
+  /* width: 100%; */
   margin: 4px;
   border-radius: 6px;
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
@@ -20,9 +22,13 @@
 }
 
 .card-image {
-  --width: calc(calc(100% - 12px) / 2.3 );
+  /* --width: calc(calc(100% - 12px) / 2.3 );
   width: var(--width);
-  height: calc(calc(var(--width) * 9) / 16);
+  height: calc(calc(var(--width) * 9) / 16); */
+
+  width: 150px;
+  height: 84px;
+
   object-fit: cover;
   border-radius: 6px 0 0 6px;
 }
@@ -59,7 +65,7 @@ mat-divider {
   padding-bottom: 10px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .container {
     display: flex;
     flex-wrap: wrap;
