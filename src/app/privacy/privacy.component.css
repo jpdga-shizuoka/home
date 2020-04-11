@@ -1,8 +1,15 @@
+.content a::after {
+  content: "⮕";
+  padding-right: 3px;
+}
+.content a[target="_blank"]:not(.circle-link):not(.card)::after {
+  content: "🔗";
+}
 .mat-h1, .mat-typography h1 {
   margin-bottom: 6px;
 }
 .description p {
-  margin: 0 6px;
+  margin: 6px 6px;
   line-height: 165%;
 }
 mat-divider {
