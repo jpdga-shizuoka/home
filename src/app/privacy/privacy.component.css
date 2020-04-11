@@ -1,10 +1,9 @@
 .mat-h1, .mat-typography h1 {
   margin-bottom: 6px;
 }
-.description {
+.description p {
   margin: 0 6px;
-  font-size: 1rem;
-  line-height: 175%;
+  line-height: 165%;
 }
 mat-divider {
   margin-top: 0;
