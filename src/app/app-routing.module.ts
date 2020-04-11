@@ -36,7 +36,7 @@ const routes: Routes = [
   }}},
   { path: 'whatsdiscgolf', component: VideosComponent, data: {
     title: "ディスクゴルフってなに?",
-    description: `<p>誰にでもできるお遊びでもあり, そして競技としても楽しめる奥が深〜いスポーツだよ!
+    description: `<p>気軽にできる遊びであり, そして競技としても楽しめる奥が深〜いスポーツだよ!
                   まずはビデオで様子を見てみよう.</p>
                   <p>おもしろそうって思ってくれました?</p>
                   <p>そしたら, さっそくコースに出かけよう!
@@ -62,19 +62,15 @@ const routes: Routes = [
     title: "ディスクゴルフ入門",
     description: `<p>日本チャンピオン菊地哲也プロによるビデオ講座をチェックしよう!
                   これを見たらもうコースデビューするしか無い!</p>
-                  <p>次は: <a href="thisisdiscgolf">これがディスクゴルフだ</a></p>
-                  <p>参考:
-                    <ul>
-                      <li>
-                        <a target="_blank" rel="noopener" href="https://innova-hero.jp/discgolf/">
-                          基本ルール (INNOVA JAPAN)
-                        </a>
-                      </li>
-                      <li>
-                        <a href="koshukai">ディスクゴルフ講習会のお知らせ</a>
-                      </li>
-                    </ul>
+                  <p>あわせて:
+                    <a target="_blank" rel="noopener" href="https://innova-hero.jp/discgolf/">
+                      基本ルール (INNOVA JAPAN)
+                    </a>
                   </p>
+                  <p>参考:
+                    <a href="koshukai">ディスクゴルフ講習会のお知らせ</a>
+                  </p>
+                  <p>次は: <a href="thisisdiscgolf">これがディスクゴルフだ</a></p>
                   <p>(提供:
                     <a target="_blank" rel="noopener" href="https://www.youtube.com/channel/UCIT1UG20GhW2E23fPnM0Jtg">
                       INNOVA JAPAN Disc Golf TV
@@ -89,11 +85,15 @@ const routes: Routes = [
   }},
   { path: 'thisisdiscgolf', component: VideosComponent, data: {
     title: "これがディスクゴルフだ!",
-    description: `<p>コースデビューしてもしなくても, 世界のトップアスリートのプレーをあらためて見てみよう!</p>
-                  <p>オリンピック競技候補のウワサに上がるのも納得のプレーばかり!
-                  もう信じられな〜い!!
+    description: `<p>コースデビューしてもしなくても, 世界のトップアスリートのプレーをあらためて見てみよう!
+                  オリンピック競技候補のウワサに上がるのも納得するしかない!
                   </p>
                   <p>次は: <a href="majors">これがプロの世界だ</a>
+                  </p>
+                  <p>(提供:
+                    <a target="_blank" rel="noopener" href="https://www.youtube.com">
+                      YouTube
+                    </a>)
                   </p>`,
     category: 'thisisdiscgolf',
     metaDescription: {
@@ -124,7 +124,7 @@ const routes: Routes = [
                   </p>
                   <p>次は: <a href="gogames">試合に出よう!</a></p>
                   <p>(提供:
-                    <a target="_blank" rel="noopener" href="https://www.youtube.com/channel">
+                    <a target="_blank" rel="noopener" href="https://www.youtube.com">
                       YouTube
                     </a>)
                   </p>`,
