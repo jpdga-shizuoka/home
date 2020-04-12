@@ -70,7 +70,10 @@ const routes: Routes = [
                       基本ルール (INNOVA JAPAN)
                     </a>
                   </p>
-                  <p class="my-small">参考:
+                  <p class="my-small">情報:
+                    <a href="location">ディスクゴルフコース案内</a>
+                  </p>
+                  <p class="my-small">情報:
                     <a href="koshukai">ディスクゴルフ講習会のお知らせ</a>
                   </p>
                   <a class="my-next-button" href="thisisdiscgolf">
