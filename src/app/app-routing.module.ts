@@ -42,8 +42,10 @@ const routes: Routes = [
                   <p>そしたら, さっそくコースに出かけよう!
                   周りの人にぶつけないように気を付けさえすれば,
                   こまかいルールなんて知らなくても大丈夫!</p>
-                  <p>次は: <a href="letsplaydiscgolf">ディスクゴルフ入門</a></p>
-                  <p>(提供:
+                  <a class="my-next-button" href="letsplaydiscgolf">
+                    <span>次は:</span><span>ディスクゴルフ入門</span>
+                  </a>
+                  <p class="my-reference">(参照先:
                     <a target="_blank" rel="noopener" href="https://www.youtube.com/channel/UCKRGfUYpPhad8UMv0n_RLOg">
                       JPDGA Movie
                     </a>,
@@ -62,16 +64,18 @@ const routes: Routes = [
     title: "ディスクゴルフ入門",
     description: `<p>日本チャンピオン菊地哲也プロによるビデオ講座をチェックしよう!
                   これを見たらもうコースデビューするしか無い!</p>
-                  <p>あわせて:
+                  <p class="my-small">あわせて:
                     <a target="_blank" rel="noopener" href="https://innova-hero.jp/discgolf/">
                       基本ルール (INNOVA JAPAN)
                     </a>
                   </p>
-                  <p>参考:
+                  <p class="my-small">参考:
                     <a href="koshukai">ディスクゴルフ講習会のお知らせ</a>
                   </p>
-                  <p>次は: <a href="thisisdiscgolf">これがディスクゴルフだ</a></p>
-                  <p>(提供:
+                  <a class="my-next-button" href="thisisdiscgolf">
+                    <span>次は:</span><span>これがディスクゴルフだ!</span>
+                  </a>
+                  <p class="my-reference">(参照先:
                     <a target="_blank" rel="noopener" href="https://www.youtube.com/channel/UCIT1UG20GhW2E23fPnM0Jtg">
                       INNOVA JAPAN Disc Golf TV
                     </a>)
@@ -88,9 +92,10 @@ const routes: Routes = [
     description: `<p>コースデビューしてもしなくても, 世界のトップアスリートのプレーをあらためて見てみよう!
                   オリンピック競技候補のウワサに上がるのも納得するしかない!
                   </p>
-                  <p>次は: <a href="majors">これがプロの世界だ</a>
-                  </p>
-                  <p>(提供:
+                  <a class="my-next-button" href="majors">
+                    <span>次は:</span><span>これがプロの世界だ!</span>
+                  </a>
+                  <p class="my-reference">(参照先:
                     <a target="_blank" rel="noopener" href="https://www.youtube.com">
                       YouTube
                     </a>)
@@ -106,10 +111,10 @@ const routes: Routes = [
     title: "これがプロの世界だ!",
     description: `<p>ゴルフと同じようにディスクゴルフにもプロツアーがあって,
                   たくさんの大会が世界中で行われているよ.</p>
-                  <p>週末の四日間を使って,
+                  <p>トップクラスの大会では, 週末の四日間を使って,
                   18ホールを1ラウンドとして1日1ラウンド行い,
-                  計4ラウンド/72ホールで優勝を争う大会が欧米では多いね.
-                  また日本の公式戦では, その72ホールをギュッと2日にまとめて競技するんだ.
+                  計4ラウンド/72ホールで優勝を争うんだ.
+                  日本の上位大会では, その72ホールをギュッと2日にまとめて競技するよ.
                   </p>
                   <p>またメジャーと呼ばれる大会もゴルフやテニスと同じようにあるんだ;</p>
                   <ul>
@@ -122,8 +127,10 @@ const routes: Routes = [
                   解説は英語だけどルールは簡単なので,
                   試合の様子, 雰囲気や醍醐味は伝わると思うんだ.
                   </p>
-                  <p>次は: <a href="gogames">試合に出よう!</a></p>
-                  <p>(提供:
+                  <a class="my-next-button" href="gogames">
+                    <span>次は:</span><span>試合に出よう!</span>
+                  </a>
+                  <p class="my-reference">(参照先:
                     <a target="_blank" rel="noopener" href="https://www.youtube.com">
                       YouTube
                     </a>)

@@ -99,6 +99,43 @@ footer a {
   /* align-items: center; */
 }
 
+.my-next-button {
+  border-radius: 4px;
+  border: 1px solid #eee;
+  background-color: #fafafa;
+  height: 30px;
+  width: auto;
+  margin: 0 auto 8px;
+  padding: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  line-height: 24px;
+}
+.my-next-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 17px rgba(black, 0.35);
+}
+.my-next-button span:first-child {
+  margin-right: 6px;
+}
+.my-reference {
+  font-size: small;
+  text-align: right;
+}
+.my-small {
+  font-size: small;
+  line-height: 1rem;
+}
+.my-small img {
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  margin: 0;
+}
+
 @media screen and (max-width: 767px) {
   .content {
     padding: 0 6px;
@@ -112,5 +149,9 @@ footer a {
 @media screen and (max-width: 374px) {
   html, body {
     font-size: 12px;
+  }
+  .my-small {
+    font-size: 12px;
+    line-height: 0.9rem;
   }
 }
