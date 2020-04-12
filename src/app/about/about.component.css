@@ -1,9 +1,10 @@
 .content a::after {
-  content: "⮕";
+  content: "▶︎";
   padding-right: 3px;
 }
 .content a[target="_blank"]:not(.circle-link):not(.card)::after {
   content: "🔗";
+  padding-right: 3px;
 }
 .mat-h1, .mat-typography h1 {
   margin-bottom: 6px;
