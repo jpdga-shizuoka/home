@@ -7,7 +7,7 @@ const MAX_VIDEO_WIDTH = 640;
 const VIDEO_SIDE_PADDING = 16;
 
 @Component({
-  selector: 'video-sheet',
+  selector: 'app-video-sheet',
   template: `
     <div class="video-view">
         <youtube-player
