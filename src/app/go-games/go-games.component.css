@@ -15,7 +15,6 @@ mat-divider {
 mat-card {
   width: 90%;
   margin: 4px;
-  cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
 mat-card:hover {
