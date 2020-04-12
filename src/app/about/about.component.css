@@ -1,8 +1,8 @@
-.content a::after {
+.content#about a::after {
   content: "▶︎";
   padding-right: 3px;
 }
-.content a[target="_blank"]:not(.circle-link):not(.card)::after {
+.content#about a[target="_blank"]:not(.circle-link):not(.card)::after {
   content: "🔗";
   padding-right: 3px;
 }
@@ -22,7 +22,6 @@ mat-divider {
 mat-card {
   width: 90%;
   margin: 4px;
-  cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
 mat-card:hover {
