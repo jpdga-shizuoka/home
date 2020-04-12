@@ -1,8 +1,8 @@
-.content a::after {
+.content#privacy a::after {
   content: "⮕";
   padding-right: 3px;
 }
-.content a[target="_blank"]:not(.circle-link):not(.card)::after {
+.content#privacy a[target="_blank"]:not(.circle-link):not(.card)::after {
   content: "🔗";
 }
 .mat-h1, .mat-typography h1 {

@@ -1,8 +1,8 @@
-.content a::after {
+.content#videos a::after {
   content: "▶︎";
   padding-right: 3px;
 }
-.content a[target="_blank"]:not(.circle-link):not(.card)::after {
+.content#videos a[target="_blank"]:not(.circle-link):not(.card)::after {
   content: "🔗";
   padding-right: 3px;
 }

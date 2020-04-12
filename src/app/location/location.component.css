@@ -1,9 +1,9 @@
-.mat-table a[target="_blank"]::after {
+.content#location .mat-table a[target="_blank"]::after {
   content: "🔗";
   padding-right: 3px;
 }
-.mat-table a[href^="https://maps.google"]::after,
-.mat-table a[href^="http://maps.apple"]::after {
+.content#location .mat-table a[href^="https://maps.google"]::after,
+.content#location .mat-table a[href^="http://maps.apple"]::after {
   content: "🌐";
   padding-right: 3px;
 }
