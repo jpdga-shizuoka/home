@@ -36,7 +36,7 @@ const routes: Routes = [
       keywords: '静岡県ディスクゴルフ協会,ディスクゴルフ,静岡県,プライバシーポリシー',
   }}},
   { path: 'whatsdiscgolf', component: VideosComponent, data: {
-    title: "ディスクゴルフってなに?",
+    title: 'ディスクゴルフってなに?',
     description: `<p>気軽にできる遊びであり, そして競技としても楽しめる奥が深〜いスポーツだよ!
                   まずはビデオで様子を見てみよう.</p>
                   <p>おもしろそうって思ってくれました?</p>
@@ -56,13 +56,13 @@ const routes: Routes = [
                   </p>`,
     category: 'whatsdiscgolf',
     metaDescription: {
-      title: "ディスクゴルフってなに?",
+      title: 'ディスクゴルフってなに?',
       description: 'ディスクゴルフを紹介します',
       keywords: '静岡県ディスクゴルフ協会,ディスクゴルフ,静岡県,ディスクゴルフの紹介',
     }
   }},
   { path: 'letsplaydiscgolf', component: VideosComponent, data: {
-    title: "ディスクゴルフ入門",
+    title: 'ディスクゴルフ入門',
     description: `<p>日本チャンピオン菊地哲也プロによるビデオ講座をチェックしよう!
                   これを見たらもうコースデビューするしか無い!</p>
                   <p class="my-small">あわせて:
@@ -83,13 +83,13 @@ const routes: Routes = [
                   </p>`,
     category: 'letsplaydiscgolf',
     metaDescription: {
-      title: "ディスクゴルフ入門",
+      title: 'ディスクゴルフ入門',
       description: 'ビデオ講座によるディスクゴルフ入門',
       keywords: '静岡県ディスクゴルフ協会,ディスクゴルフ,静岡県,ディスクゴルフ入門,ビデオ講座',
     }
   }},
   { path: 'thisisdiscgolf', component: VideosComponent, data: {
-    title: "これがディスクゴルフだ!",
+    title: 'これがディスクゴルフだ!',
     description: `<p>コースデビューしてもしなくても, 世界のトップアスリートのプレーをあらためて見てみよう!
                   オリンピック競技候補のウワサに上がるのも納得するしかない!
                   </p>
@@ -103,13 +103,13 @@ const routes: Routes = [
                   </p>`,
     category: 'thisisdiscgolf',
     metaDescription: {
-      title: "これがディスクゴルフだ!",
+      title: 'これがディスクゴルフだ!',
       description: 'トップアスリートによるディスクゴルフ競技の紹介',
       keywords: '静岡県ディスクゴルフ協会,ディスクゴルフ,静岡県,トップアスリート',
     }
   }},
   { path: 'majors', component: VideosComponent, data: {
-    title: "これがプロの世界だ!",
+    title: 'これがプロの世界だ!',
     description: `<p>ゴルフと同じようにディスクゴルフにもプロツアーがあって,
                   たくさんの大会が世界中で行われているよ.</p>
                   <p>トップクラスの大会では, 週末の四日間を使って,
@@ -138,7 +138,7 @@ const routes: Routes = [
                   </p>`,
     category: 'majors',
     metaDescription: {
-      title: "これがプロの世界だ!",
+      title: 'これがプロの世界だ!',
       description: '全てのプロディスクゴルファーが目指すメジャー大会の紹介',
       keywords: '静岡県ディスクゴルフ協会,ディスクゴルフ,静岡県,トップアスリート,世界,メジャー,大会',
     }

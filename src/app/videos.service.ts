@@ -16,7 +16,7 @@ export class VideosService {
   constructor() { }
 
   getVideos(category: string): Observable<VIDEO[]> {
-    switch(category) {
+    switch (category) {
       case 'whatsdiscgolf':
         return of(WHATS_DISCGOLF);
       case 'letsplaydiscgolf':

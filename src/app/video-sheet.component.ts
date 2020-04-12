@@ -27,7 +27,7 @@ export class VideoSheetComponent {
     @Inject(MAT_BOTTOM_SHEET_DATA) public video: VIDEO,
     private bottomSheetRef: MatBottomSheetRef<VideoSheetComponent>,
   ) {
-      const width = window.innerWidth - VIDEO_SIDE_PADDING*2;
+      const width = window.innerWidth - VIDEO_SIDE_PADDING * 2;
       this.width = Math.min(MAX_VIDEO_WIDTH, width);
       this.height = this.width / 16 * 9;
   }
