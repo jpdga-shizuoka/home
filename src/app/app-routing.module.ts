@@ -142,6 +142,11 @@ const routes: Routes = [
       keywords: '静岡県ディスクゴルフ協会,ディスクゴルフ,静岡県,トップアスリート,世界,メジャー,大会',
     }
   }},
+  { path: 'location', component: LocationComponent, data: { metaDescription: {
+      title: 'コース案内',
+      description: '県内と近県のディスクゴルフコース情報です',
+      keywords: '静岡県ディスクゴルフ協会,ディスクゴルフ,静岡県,コース,ディスクゴルフコース',
+  }}},
 ];
 
 @NgModule({

@@ -23,3 +23,13 @@ export interface MetaDescription {
   ngMeta: Meta;
   ngRouter: Router;
 }
+
+export interface CourseLocation {
+  name: string;
+  city: string;
+  prefecture: string;
+  location: number[];
+  website: string;
+  description?: string;
+  geoUrl?: string;
+}
