@@ -25,7 +25,12 @@
 .menu-active {
   background-color: #efe5fd;
 }
-
+img.logo {
+  width: 20px;
+  height: 20px;
+  margin-right: 4px;
+  padding: 2px;
+}
 img#background {
   position: fixed;
   bottom: 0px;
