@@ -24,6 +24,7 @@ mat-divider {
   margin-top: 0;
   padding-bottom: 10px;
 }
+.container mat-tab-group,
 .container table {
   margin: auto;
   width: 100%;
@@ -32,6 +33,9 @@ mat-divider {
 .container table th,
 .container table td {
   font-size: 15px;
+}
+.mat-table {
+  background-color: transparent;
 }
 
 @media screen and (min-width: 767px) {

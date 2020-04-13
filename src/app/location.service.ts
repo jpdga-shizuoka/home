@@ -2,8 +2,9 @@ import { Injectable } from '@angular/core';
 import { MatTableDataSource } from '@angular/material/table';
 import { Observable, of } from 'rxjs';
 
-import { CourseLocation } from './models';
+import { CourseLocation, DgaInfo } from './models';
 import COURSE_LOCATION from '../assets/models/course-location.json';
+import DGA_INFO from '../assets/models/dga-info.json';
 
 @Injectable({
   providedIn: 'root'
@@ -12,9 +13,11 @@ export class LocationService {
 
   private courseLocation: MatTableDataSource<CourseLocation>;
   private appleDevice: boolean;
+  dgaInfo: MatTableDataSource<DgaInfo>;
 
   constructor() {
     this.courseLocation = new MatTableDataSource<CourseLocation>();
+    this.dgaInfo = new MatTableDataSource<DgaInfo>(DGA_INFO);
 
     COURSE_LOCATION.forEach(a => {
       const loc = a as CourseLocation;

@@ -33,3 +33,8 @@ export interface CourseLocation {
   description?: string;
   geoUrl?: string;
 }
+
+export interface DgaInfo {
+  name: string;
+  website: string;
+}

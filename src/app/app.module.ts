@@ -19,6 +19,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatTableModule } from '@angular/material/table';
+import { MatTabsModule } from '@angular/material/tabs';
 
 import { DeviceDetectorModule } from 'ngx-device-detector';
 
@@ -61,6 +62,7 @@ import { LocationComponent } from './location/location.component';
     MatMenuModule,
     MatExpansionModule,
     MatTableModule,
+    MatTabsModule,
     MatBottomSheetModule,
     DeviceDetectorModule.forRoot(),
   ],
