@@ -1,0 +1,66 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="(isHandset$ | async) === false">
+    <mat-toolbar>Menu</mat-toolbar>
+    <mat-nav-list (click)="onClickLink()">
+        <a mat-list-item routerLinkActive="menu-active" routerLink="/"
+          [routerLinkActiveOptions]="{exact: true}">
+          <mat-icon>home</mat-icon>ホーム</a>
+
+        <mat-divider></mat-divider>
+        <a mat-list-item routerLinkActive="menu-active" routerLink="/whatsdiscgolf">
+          <mat-icon>bookmark</mat-icon>ディスクゴルフってなに?</a>
+        <a mat-list-item routerLinkActive="menu-active" routerLink="/letsplaydiscgolf">
+          <mat-icon>bookmark</mat-icon>ディスクゴルフ入門</a>
+        <a mat-list-item routerLinkActive="menu-active" routerLink="/thisisdiscgolf">
+          <mat-icon>bookmark</mat-icon>これがディスクゴルフだ!</a>
+        <a mat-list-item routerLinkActive="menu-active" routerLink="/majors">
+          <mat-icon>bookmark</mat-icon>これがプロの世界だ!</a>
+        <a mat-list-item routerLinkActive="menu-active" routerLink="/gogames">
+          <mat-icon>bookmark</mat-icon>試合に出よう!</a>
+
+        <mat-divider></mat-divider>
+        <a mat-list-item routerLinkActive="menu-active" routerLink="/location">
+          <mat-icon>info</mat-icon>コース案内</a>
+        <a mat-list-item routerLinkActive="menu-active" routerLink="/koshukai">
+          <mat-icon>info</mat-icon>講習会案内</a>
+        <a mat-list-item routerLinkActive="menu-active" routerLink="/about">
+          <mat-icon>info</mat-icon>当協会について</a>
+
+        <mat-divider></mat-divider>
+        <a mat-list-item target="_blank" rel="noopener"
+          href="https://www.facebook.com/静岡県ディスクゴルフ協会-106178680734223/">
+          <img class="logo" src="/assets/img/f_logo_RGB-Blue_144.png" alt="Facebookロゴ">
+          Facebookページ 🔗</a>
+
+        <a mat-list-item target="_blank" rel="noopener"
+          href="http://jpdga-shizuoka.github.io/ssa-round-ratings">
+          <img class="logo" src="/assets/img/dg-japan-144.png" alt="DJ Japanロゴ">
+          DG Japan 🔗</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <span>静岡県ディスクゴルフ協会</span>
+    </mat-toolbar>
+
+    <!-- Add Content Here -->
+    <div class="router-outlet">
+      <router-outlet>
+      </router-outlet>
+    </div>
+
+    <img id="background" src="/assets/img/shizuoka-jpdga.001.png" alt="Shizuoka fujisan background">
+
+  </mat-sidenav-content>
+</mat-sidenav-container>

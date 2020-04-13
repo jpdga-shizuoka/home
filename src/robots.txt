@@ -1,0 +1,2 @@
+User-agent : *
+Sitemap : https://jpdga-shizuoka.github.io/home/sitemap.xml

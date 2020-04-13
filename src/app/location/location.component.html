@@ -1,0 +1,66 @@
+<div class="content" id="location">
+  <h1>コース案内</h1>
+  <mat-divider></mat-divider>
+  <div class="description">
+    <p>
+      いつでもディスクゴルフを楽しむことができる常設ディスクゴルフコースが設置されている施設を,
+      近県の情報も合わせて紹介するね.
+    </p>
+    <p>
+      なお施設の利用状況など事前確認をお願いするとともに,
+      施設の案内に従って安全にプレーしてね。
+    </p>
+    <p>
+      また県外の講習会や試合•大会等の情報は,
+      近県の協会をチェックしてみてね.      
+    </p>
+  </div>
+  <mat-divider></mat-divider>
+  <div class="container">
+
+    <mat-tab-group>
+      <mat-tab label="コース案内">
+        <table mat-table [dataSource]="locationSource" class="mat-elevation-z2">
+
+          <ng-container matColumnDef="name">
+            <th mat-header-cell *matHeaderCellDef>施設</th>
+            <td mat-cell *matCellDef="let element">
+              <a href="{{element.website}}" target="_blank" rel="noopener">
+                {{element.name}}
+              </a>
+            </td>
+          </ng-container>
+
+          <ng-container matColumnDef="address">
+            <th mat-header-cell *matHeaderCellDef>所在地</th>
+            <td mat-cell *matCellDef="let element">
+              <a href="{{element.geoUrl}}" target="_blank" rel="noopener">
+                {{element.prefecture}}{{element.city}}
+              </a>
+            </td>
+          </ng-container>
+
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+      </mat-tab>
+
+      <mat-tab label="近県の協会">
+        <table mat-table [dataSource]="dgaSource" class="mat-elevation-z2">
+
+          <ng-container matColumnDef="name">
+            <th mat-header-cell *matHeaderCellDef>施設</th>
+            <td mat-cell *matCellDef="let element">
+              <a href="{{element.website}}" target="_blank" rel="noopener">
+                {{element.name}}
+              </a>
+            </td>
+          </ng-container>
+
+          <tr mat-header-row *matHeaderRowDef="['name']"></tr>
+          <tr mat-row *matRowDef="let row; columns: ['name'];"></tr>
+        </table>
+      </mat-tab>
+    </mat-tab-group>
+  </div>
+</div>

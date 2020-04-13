@@ -1,0 +1,66 @@
+.content#about a::after {
+  content: "▶︎";
+  padding-right: 3px;
+}
+.content#about a[target="_blank"]:not(.circle-link):not(.card)::after {
+  content: "🔗";
+  padding-right: 3px;
+}
+.mat-h1, .mat-typography h1 {
+  margin-bottom: 6px;
+}
+.description {
+  margin: auto;
+  width: 90%;
+  font-size: 1rem;
+  line-height: 175%;
+}
+mat-divider {
+  margin-top: 0;
+  padding-bottom: 10px;
+}
+mat-card {
+  width: 90%;
+  margin: 4px;
+  transition: all 0.2s ease-in-out;
+}
+mat-card:hover {
+  transform: translateY(-3px);
+}
+mat-card img {
+  height: 180px;
+  object-fit: cover;
+}
+.img-icon img {
+  display: block;
+  margin: auto;
+  width: 40%;
+  object-fit: contain;
+}
+.mat-card-content p {
+  line-height: 175%;
+}
+.oss-table {
+  font-size: small;
+}
+.oss-table td:first-child {
+  text-align: right;
+}
+
+@media screen and (min-width: 767px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .description {
+    width: 550px;
+  }
+  .content .description {
+    margin: 0 auto;
+  }
+  mat-card {
+    width: 340px;
+    margin: 12px 8px;
+  }
+}
