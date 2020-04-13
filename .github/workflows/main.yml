@@ -1,0 +1,24 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches:
+    - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Use Node.js 10.x
+      uses: actions/setup-node@v1
+      with:
+        node-version: 10.x
+    - name: Deploy to Github pages
+      run: |
+        npm install
+        npm run deploy -- --name="jpdga-shizuoka" --email=56290481+jpdga-shizuoka@users.noreply.github.com
+      env:
+        CI: true
+        GH_TOKEN: ${{ secrets.DEPLOY_TO_GHPAGE }}
