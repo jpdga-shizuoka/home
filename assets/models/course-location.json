@@ -1,0 +1,66 @@
+[
+  {
+    "name": "富士山こどもの国",
+    "city": "富士市",
+    "prefecture": "静岡県",
+    "website": "https://www.kodomo.or.jp",
+    "location": [35.250137, 138.769422],
+    "description": ""
+  },
+  {
+    "name": "中央青少年交流の家",
+    "city": "御殿場市",
+    "prefecture": "静岡県",
+    "website": "https://fujinosato.niye.go.jp",
+    "location": [35.322941, 138.868420],
+    "description": ""
+  },
+  {
+    "name": "愛川ふれあいの村",
+    "city": "愛川町",
+    "prefecture": "神奈川県",
+    "website": "http://fureai-aikawa.com",
+    "location": [35.537984, 139.263848],
+    "description": ""
+  },
+  {
+    "name": "清里の森",
+    "city": "北杜市",
+    "prefecture": "山梨県",
+    "website": "https://kiyosatonomori.co.jp",
+    "location": [35.927138, 138.434570],
+    "description": ""
+  },
+  {
+    "name": "新城総合運動公園",
+    "city": "新城市",
+    "prefecture": "愛知県",
+    "website": "https://www.aichi-koen.com/shinshiro",
+    "location": [34.932378, 137.542466],
+    "description": ""
+  },
+  {
+    "name": "市民四季の森",
+    "city": "小牧市",
+    "prefecture": "愛知県",
+    "website": "http://www.city.komaki.aichi.jp/admin/event_1/midokoro/shiminshikinomori",
+    "location": [35.310878, 137.003712],
+    "description": ""
+  },
+  {
+    "name": "昭和記念公園",
+    "city": "立川市",
+    "prefecture": "東京都",
+    "website": "https://www.showakinen-koen.jp",
+    "location": [35.711685, 139.391375],
+    "description": ""
+  },
+  {
+    "name": "辰巳の森海浜公園",
+    "city": "江東区",
+    "prefecture": "東京",
+    "website": "http://www.tptc.co.jp/park/03_01",
+    "location": [35.649265, 139.813426],
+    "description": ""
+  }
+]
