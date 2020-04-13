@@ -1,11 +1,15 @@
-.content#location .mat-table a[target="_blank"]::after {
-  content: "🔗";
-  padding-right: 3px;
+.content#location .mat-table a[target="_blank"] {
+  background: url("/assets/img/open_in_new-24px.svg") no-repeat right center;
+  background-size: 20px 20px;
+  display: inline-block;
+  padding-right: 24px;
 }
-.content#location .mat-table a[href^="https://maps.google"]::after,
-.content#location .mat-table a[href^="http://maps.apple"]::after {
-  content: "🌐";
-  padding-right: 3px;
+.content#location .mat-table a[href^="https://maps.google"],
+.content#location .mat-table a[href^="http://maps.apple"] {
+  background: url("/assets/img/room-24px.svg") no-repeat right center;
+  background-size: 20px 20px;
+  display: inline-block;
+  padding-right: 24px;
 }
 .mat-h1, .mat-typography h1 {
   margin-bottom: 6px;
