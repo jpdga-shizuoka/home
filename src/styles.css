@@ -91,11 +91,9 @@ footer a {
 }
 .my-next-button {
   border-radius: 4px;
-  border: 1px solid #eee;
-  background-color: #fafafa;
-  height: 30px;
+  background-color: white;
   width: 100%;
-  margin: 0 auto 8px;
+  margin: 0 8px 8px;
   padding: 8px;
   display: flex;
   flex-direction: row;
@@ -103,39 +101,32 @@ footer a {
   align-items: center;
   transition: all 0.2s ease-in-out;
   line-height: 24px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
 .my-next-button:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 4px 17px rgba(black, 0.35);
+  transform: translateY(-1px);
+  box-shadow: 2px 2px;
 }
 .my-next-button span:first-child {
   margin-right: 6px;
 }
 .my-reference {
-  font-size: small;
+  font-size: 0.7rem;
   text-align: right;
-}
-.my-small {
-  font-size: small;
-  line-height: 1rem;
-}
-.my-small img {
-  width: 20px;
-  height: 20px;
-  padding: 0;
-  margin: 0;
 }
 .video-card {
   display: inline-flex;
   width: 370px;
   margin: 4px;
   border-radius: 6px;
+  background-color: white;
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
 .video-card:hover {
-  transform: translateY(-3px);
+  transform: translateY(-1px);
+  box-shadow: 3px 3px;
 }
 .video-thumbnail {
   width: 160px;
@@ -170,8 +161,8 @@ footer a {
   line-height: 175%;
 }
 .content > h1 {
-  font-size: 1.2rem;
-  padding-left: 10px;
+  font-size: 1.3rem;
+  padding-left: 1.3rem;
   margin: 10px 0;
 }
 .content > .mat-divider {
@@ -199,6 +190,7 @@ footer a {
 @media screen and (max-width: 414px) {
   .content {
     padding: 0 6px;
+    margin-bottom: 40px;
   }
   .content > .description {
     width: auto;
@@ -217,17 +209,16 @@ footer a {
   .video-header {
     margin: 2px 0 2px 4px;
   }
-}
-@media screen and (max-width: 375px) {
-  .my-small {
-    font-size: 12px;
-    line-height: 0.9rem;
+  .my-next-button {
+    margin: 6px;
+    width: auto;
   }
 }
+@media screen and (max-width: 375px) {
+
+}
 @media screen and (max-width: 320px) {
-  .content p.my-small a {
-    background-size: 13px 13px;
-    padding-right: 14px;
-    display: inline-block;
+  .video-header {
+    margin: 1px 0 1px 4px;
   }
 }

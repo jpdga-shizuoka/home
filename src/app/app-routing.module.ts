@@ -65,25 +65,23 @@ const routes: Routes = [
     title: 'ディスクゴルフ入門',
     description: `<p>日本チャンピオン菊地哲也プロによるビデオ講座をチェックしよう!
                   これを見たらもうコースデビューするしか無い!</p>
-                  <p class="my-small">あわせて:
+                  <p>あわせて
                     <a target="_blank" rel="noopener" href="https://innova-hero.jp/discgolf/">
-                      基本ルール (INNOVA JAPAN)
-                    </a>
-                  </p>
-                  <p class="my-small">情報:
-                    <a href="location">ディスクゴルフコース案内</a>
-                  </p>
-                  <p class="my-small">情報:
-                    <a href="koshukai">ディスクゴルフ講習会のお知らせ</a>
+                      基本ルール
+                    </a>をチェックすればもうルールも完璧だ.
                   </p>
                   <a class="my-next-button" href="thisisdiscgolf">
                     <span>次は:</span><span>これがディスクゴルフだ!</span>
                   </a>
-                  <p class="my-reference">(参照先:
-                    <a target="_blank" rel="noopener" href="https://www.youtube.com/channel/UCIT1UG20GhW2E23fPnM0Jtg">
-                      INNOVA JAPAN Disc Golf TV
-                    </a>)
-                  </p>`,
+                  <a class="my-next-button" href="location">
+                    <span>または:</span><span>コース案内</span>
+                  </a>
+                  <a class="my-next-button" href="koshukai">
+                    <span>または:</span><span>講習会案内</span>
+                  </a>
+                  <a class="my-reference" target="_blank" rel="noopener" href="https://www.youtube.com/channel/UCIT1UG20GhW2E23fPnM0Jtg">
+                    INNOVA JAPAN Disc Golf TV
+                  </a>)`,
     category: 'letsplaydiscgolf',
     metaDescription: {
       title: 'ディスクゴルフ入門',
