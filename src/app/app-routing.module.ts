@@ -43,9 +43,14 @@ const routes: Routes = [
                   <p>そしたら, さっそくコースに出かけよう!
                   周りの人にぶつけないように気を付けさえすれば,
                   こまかいルールなんて知らなくても大丈夫!</p>
-                  <a class="my-next-button" href="letsplaydiscgolf">
-                    <span>次は:</span><span>ディスクゴルフ入門</span>
-                  </a>
+                  <div class="container">
+                    <a class="my-next-button" href="letsplaydiscgolf">
+                      <span>次は:</span><span>ディスクゴルフ入門</span>
+                    </a>
+                    <a class="my-next-button" href="location">
+                      <span>または:</span><span>コース案内</span>
+                    </a>
+                  </div>
                   <p class="my-reference">(参照先:
                     <a target="_blank" rel="noopener" href="https://www.youtube.com/channel/UCKRGfUYpPhad8UMv0n_RLOg">
                       JPDGA Movie
@@ -70,18 +75,22 @@ const routes: Routes = [
                       基本ルール
                     </a>をチェックすればもうルールも完璧だ.
                   </p>
-                  <a class="my-next-button" href="thisisdiscgolf">
-                    <span>次は:</span><span>これがディスクゴルフだ!</span>
-                  </a>
-                  <a class="my-next-button" href="location">
-                    <span>または:</span><span>コース案内</span>
-                  </a>
-                  <a class="my-next-button" href="koshukai">
-                    <span>または:</span><span>講習会案内</span>
-                  </a>
-                  <a class="my-reference" target="_blank" rel="noopener" href="https://www.youtube.com/channel/UCIT1UG20GhW2E23fPnM0Jtg">
+                  <div class="container">
+                    <a class="my-next-button" href="thisisdiscgolf">
+                      <span>次は:</span><span>これがディスクゴルフだ!</span>
+                    </a>
+                    <a class="my-next-button" href="location">
+                      <span>または:</span><span>コース案内</span>
+                    </a>
+                    <a class="my-next-button" href="koshukai">
+                      <span>または:</span><span>講習会案内</span>
+                    </a>
+                  </div>
+                  <p class="my-reference">(参照先:
+                    <a target="_blank" rel="noopener" href="https://www.youtube.com/channel/UCIT1UG20GhW2E23fPnM0Jtg">
                     INNOVA JAPAN Disc Golf TV
-                  </a>)`,
+                    </a>)
+                  </p>`,
     category: 'letsplaydiscgolf',
     metaDescription: {
       title: 'ディスクゴルフ入門',
@@ -94,9 +103,11 @@ const routes: Routes = [
     description: `<p>コースデビューしてもしなくても, 世界のトップアスリートのプレーをあらためて見てみよう!
                   オリンピック競技候補のウワサに上がるのも納得するしかない!
                   </p>
-                  <a class="my-next-button" href="majors">
-                    <span>次は:</span><span>これがプロの世界だ!</span>
-                  </a>
+                  <div class="container">
+                    <a class="my-next-button" href="majors">
+                      <span>次は:</span><span>これがプロの世界だ!</span>
+                    </a>
+                  </div>
                   <p class="my-reference">(参照先:
                     <a target="_blank" rel="noopener" href="https://www.youtube.com">
                       YouTube
@@ -129,9 +140,11 @@ const routes: Routes = [
                   解説は英語だけどルールは簡単なので,
                   試合の様子, 雰囲気や醍醐味は伝わると思うんだ.
                   </p>
-                  <a class="my-next-button" href="gogames">
-                    <span>次は:</span><span>試合に出よう!</span>
-                  </a>
+                  <div class="container">
+                    <a class="my-next-button" href="gogames">
+                      <span>次は:</span><span>試合に出よう!</span>
+                    </a>
+                  </div>
                   <p class="my-reference">(参照先:
                     <a target="_blank" rel="noopener" href="https://www.youtube.com">
                       YouTube

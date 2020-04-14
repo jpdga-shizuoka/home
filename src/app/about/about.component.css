@@ -30,7 +30,7 @@ mat-card img {
   text-align: right;
 }
 
-@media screen and (min-width: 414px) {
+@media screen and (max-width: 414px) {
   mat-card {
     width: 90%;
     margin: 4px;

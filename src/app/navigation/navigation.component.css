@@ -17,7 +17,7 @@
 }
 
 .mat-nav-list a {
-  font-size: 85%;
+  font-size: 0.75rem;
 }
 .mat-nav-list mat-icon {
   margin-right: 5px
@@ -38,6 +38,9 @@ img#background {
   z-index: -10;
   width: calc(100% - 200px);
   opacity: 0.2;
+}
+a mat-icon {
+  color: #311b92;
 }
 @media screen and (max-width: 767px) {
   img#background {

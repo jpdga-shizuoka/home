@@ -90,17 +90,17 @@ footer a {
   margin-right: 5px;
 }
 .my-next-button {
-  border-radius: 4px;
+  border-radius: 1.5rem;
   background-color: white;
-  width: 100%;
+  width: 370px;
   margin: 0 8px 8px;
   padding: 8px;
-  display: flex;
+  display: inline-flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   transition: all 0.2s ease-in-out;
-  line-height: 24px;
+  /* line-height: 24px; */
   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
 .my-next-button:hover {
@@ -168,7 +168,7 @@ footer a {
 .content > .mat-divider {
   margin-top: 10px 0;
 }
-.content > .container {
+.content  .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -211,7 +211,7 @@ footer a {
   }
   .my-next-button {
     margin: 6px;
-    width: auto;
+    width: 100%;
   }
 }
 @media screen and (max-width: 375px) {
