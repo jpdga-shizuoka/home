@@ -156,7 +156,7 @@ footer a {
 }
 .content > .description {
   margin: 10px auto;
-  width: 550px;
+  max-width: 500px;
   font-size: 1rem;
   line-height: 175%;
 }
