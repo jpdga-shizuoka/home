@@ -1,26 +1,4 @@
-.content#privacy a::after {
-  content: "⮕";
-  padding-right: 3px;
-}
-.content#privacy a[target="_blank"]:not(.circle-link):not(.card)::after {
-  content: "🔗";
-}
-.mat-h1, .mat-typography h1 {
-  margin-bottom: 6px;
-}
-.description p {
-  margin: 6px 6px;
-  line-height: 165%;
-}
 mat-divider {
   margin-top: 0;
   padding-bottom: 10px;
-}
-@media screen and (min-width: 767px) {
-  .description {
-    width: 550px;
-  }
-  .content .description {
-    margin: 0 auto;
-  }
 }

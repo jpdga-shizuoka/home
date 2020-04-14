@@ -89,22 +89,12 @@ footer a {
   margin-left: 5px;
   margin-right: 5px;
 }
-
-.content {
-  display: flex;
-  margin: 10px auto 10px;
-  padding: 0 16px;
-  max-width: 960px;
-  flex-direction: column;
-  /* align-items: center; */
-}
-
 .my-next-button {
   border-radius: 4px;
   border: 1px solid #eee;
   background-color: #fafafa;
   height: 30px;
-  width: auto;
+  width: 100%;
   margin: 0 auto 8px;
   padding: 8px;
   display: flex;
@@ -135,23 +125,109 @@ footer a {
   padding: 0;
   margin: 0;
 }
-
-@media screen and (max-width: 767px) {
+.video-card {
+  display: inline-flex;
+  width: 370px;
+  margin: 4px;
+  border-radius: 6px;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.video-card:hover {
+  transform: translateY(-3px);
+}
+.video-thumbnail {
+  width: 160px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 6px 0 0 6px;
+}
+.video-header {
+  margin: 4px 0 4px 4px;
+}
+.video-title {
+  font-size: 0.75rem;
+  font-weight: bold;
+  margin: 4px 0;
+}
+.video-subtitle {
+  font-size: 0.7rem;
+}
+/*********************************************************/
+.content {
+  display: flex;
+  margin: 10px auto 10px;
+  padding: 0 16px;
+  max-width: 960px;
+  flex-direction: column;
+  /* align-items: center; */
+}
+.content > .description {
+  margin: 10px auto;
+  width: 550px;
+  font-size: 1rem;
+  line-height: 175%;
+}
+.content > h1 {
+  font-size: 1.2rem;
+  padding-left: 10px;
+  margin: 10px 0;
+}
+.content > .mat-divider {
+  margin-top: 10px 0;
+}
+.content > .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px 0;
+}
+.content a[target="_blank"] {
+  display: inline-block;
+  background: url("assets/img/open_in_new-24px.svg") no-repeat right center;
+  background-size: 1.2rem 1.2rem;
+  padding-right: 1.3rem;
+}
+.content a[href^="https://maps.google"],
+.content a[href^="http://maps.apple"] {
+  display: inline-block;
+  background: url("assets/img/room-24px.svg") no-repeat right center;
+  background-size: 1.2rem 1.2rem;
+  padding-right: 1.3rem;
+}
+@media screen and (max-width: 414px) {
   .content {
     padding: 0 6px;
   }
-}
-@media screen and (max-width: 413px) {
-  html, body {
-    font-size: 14px;
+  .content > .description {
+    width: auto;
+    margin: 10px 10px;
+  }
+  .video-card {
+    width: calc(100% - 7px);
+    margin: 4px;
+  }
+  .video-thumbnail {
+    width: 150px;
+    height: 84px;
+    object-fit: cover;
+    border-radius: 6px 0 0 6px;
+  }
+  .video-header {
+    margin: 2px 0 2px 4px;
   }
 }
-@media screen and (max-width: 374px) {
-  html, body {
-    font-size: 12px;
-  }
+@media screen and (max-width: 375px) {
   .my-small {
     font-size: 12px;
     line-height: 0.9rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .content p.my-small a {
+    background-size: 13px 13px;
+    padding-right: 14px;
+    display: inline-block;
   }
 }
