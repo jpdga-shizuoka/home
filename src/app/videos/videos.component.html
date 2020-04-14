@@ -7,7 +7,12 @@
   <div class="container">
     <ng-template ngFor let-video [ngForOf]="videos | async">
       <div class="video-card" (click)="onClick(video)">
-        <img class="video-thumbnail" src="{{getThumbnailUrl(video)}}" alt="video.title"/>
+        <div class="video-thumbnail">
+          <img src="{{getThumbnailUrl(video)}}" alt="video.title"/>
+          <div class="video-play-mark">
+            <img src="assets/img/play-circle-24.png" alt=""/>
+          </div>
+        </div>
         <div class="video-header">
           <div class="video-title">
             {{video.title}}
