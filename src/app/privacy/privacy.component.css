@@ -2,3 +2,8 @@ mat-divider {
   margin-top: 0;
   padding-bottom: 10px;
 }
+
+.container {
+  max-width: 500px;
+  margin: auto; 
+}
