@@ -68,19 +68,29 @@ const routes: Routes = [
   }},
   { path: 'letsplaydiscgolf', component: VideosComponent, data: {
     title: 'ディスクゴルフ入門',
-    description: `<p>日本チャンピオン菊地哲也プロによるビデオ講座をチェックしよう!
-                  これを見たらもうコースデビューするしか無い!</p>
-                  <p>あわせて
+    description: `<p>
+                    コースデビューはどうでしたか?
+                    ここにたどり着いた方は,
+                    ディスクゴルフにちょっぴりハマった方とお見受けいたしました.
+                  </p>
+                  <p>
+                    そんなあなたは,
+                    日本チャンピオン菊地哲也プロによるビデオ•レッスンで,
+                    さらに上達の階段を登っていってください.
+                  </p>
+                  <p>
+                    あわせて
                     <a target="_blank" rel="noopener" href="https://innova-hero.jp/discgolf/">
                       基本ルール
-                    </a>をチェックすればもうルールも完璧だ.
+                    </a>をチェックすればもう完璧.
+                    さらにこちらのビデオ
+                    <a target="_blank" rel="noopener" href="https://www.nhk.or.jp/kokokoza/tv/karada/archive/chapter001.html">
+                      体を動かすTV
+                    </a>でダメ押しだ!
                   </p>
                   <div class="container">
                     <a class="my-next-button" href="thisisdiscgolf">
                       <span>次は:</span><span>これがディスクゴルフだ!</span>
-                    </a>
-                    <a class="my-next-button" href="location">
-                      <span>または:</span><span>コース案内</span>
                     </a>
                     <a class="my-next-button" href="koshukai">
                       <span>または:</span><span>講習会案内</span>
@@ -100,8 +110,10 @@ const routes: Routes = [
   }},
   { path: 'thisisdiscgolf', component: VideosComponent, data: {
     title: 'これがディスクゴルフだ!',
-    description: `<p>コースデビューしてもしなくても, 世界のトップアスリートのプレーをあらためて見てみよう!
-                  オリンピック競技候補のウワサに上がるのも納得するしかない!
+    description: `<p>
+                    ディスクゴルフが楽しいと思ってきたあなた.
+                    そろそろ外の世界も覗いてみたい頃でしょう.
+                    それでは世界のトップアスリートのプレーを見てみよう!
                   </p>
                   <div class="container">
                     <a class="my-next-button" href="majors">
