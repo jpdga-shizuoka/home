@@ -77,7 +77,7 @@ a:hover {
   text-align: right;
 }
 .video-card {
-  display: inline-flex;
+  display: flex;
   width: 370px;
   margin: 4px;
   border-radius: 6px;
@@ -96,10 +96,6 @@ a:hover {
   height: 90px;
 }
 .video-thumbnail > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
   width: 160px;
   height: 90px;
   object-fit: cover;
@@ -116,6 +112,7 @@ a:hover {
 }
 .video-header {
   margin: 4px 0 4px 4px;
+  width: 200px;
 }
 .video-title {
   font-size: 0.75rem;
@@ -177,8 +174,12 @@ a:hover {
     margin: 10px 10px;
   }
   .video-card {
-    width: calc(100% - 7px);
+    width: calc(100% - 8px);
     margin: 4px;
+  }
+  .video-header {
+    width: calc(100% - 8px - 150px);
+    margin: 2px 0 2px 4px;
   }
   .video-thumbnail {
     width: 150px;
@@ -193,9 +194,6 @@ a:hover {
   .video-play-mark {
     top: 30px;
     left: 63px;
-  }
-  .video-header {
-    margin: 2px 0 2px 4px;
   }
   .my-next-button {
     margin: 6px;
