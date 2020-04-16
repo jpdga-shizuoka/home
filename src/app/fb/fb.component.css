@@ -1,0 +1,7 @@
+.fb-page {
+  display: block;
+  width: 300px;
+  height: calc(80vh - 64px);
+  margin: 0 auto;
+  background-color: #f8f8f8;
+}
