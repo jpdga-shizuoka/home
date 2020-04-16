@@ -1,4 +1,5 @@
-import { Component, Inject } from '@angular/core';
+import { Component, Inject, ViewChild, ElementRef } from '@angular/core';
+import { YouTubePlayer } from '@angular/youtube-player';
 import { MatBottomSheetRef, MAT_BOTTOM_SHEET_DATA } from '@angular/material/bottom-sheet';
 
 import { VIDEO } from './models';
@@ -10,16 +11,17 @@ const VIDEO_SIDE_PADDING = 16;
   selector: 'app-video-sheet',
   template: `
     <div class="video-view">
-        <youtube-player
+        <youtube-player #player
           [videoId]="id"
           [width]="width"
           [height]="height"
+          (ready)="onReady($event)"
           (stateChange)="onStateChange($event)">
         </youtube-player>
     </div>`,
 })
 export class VideoSheetComponent {
-
+  @ViewChild('player') player: YouTubePlayer;
   width: number;
   height: number;
 
@@ -43,5 +45,11 @@ export class VideoSheetComponent {
     if (event?.data === 0) {
       this.bottomSheetRef.dismiss();
     }
+  }
+  //
+  //  @see https://developers.google.com/youtube/iframe_api_reference#Events
+  //
+  onReady(event: any) {
+    this.player.playVideo();
   }
 }
