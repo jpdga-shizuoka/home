@@ -12,26 +12,26 @@ import { LocationComponent } from './location/location.component';
 const routes: Routes = [
   { path: '', component: DashboardComponent, data: { metaDescription: {
       title: '静岡県ディスクゴルフ協会',
-      description: '静岡県ディスクゴルフ協会ウェブサイト',
-      keywords: '静岡県ディスクゴルフ協会,ディスクゴルフ,静岡県',
+      description: 'ディスクゴルフ大好き人間を応援します',
+      keywords: '静岡県ディスクゴルフ協会,ディスクゴルフ,静岡県,静岡,コース,講習',
   }}},
   { path: 'gogames', component: GoGamesComponent, data: { metaDescription: {
       title: '試合に出よう!',
-      description: 'ディスクゴルフの試合に出よう!',
+      description: '試合は上達への早道',
       keywords: '静岡県ディスクゴルフ協会,ディスクゴルフ,静岡県,試合,大会',
   }}},
   { path: 'koshukai', component: KoshukaiComponent, data: { metaDescription: {
-      title: 'ディスクゴルフ講習会について',
-      description: '静岡県ディスクゴルフ協会による講習会について',
-      keywords: '静岡県ディスクゴルフ協会,ディスクゴルフ,静岡県',
+      title: 'ディスクゴルフ講習会',
+      description: '講習会を通じてディスクゴルフ愛好家を応援します',
+      keywords: '静岡県ディスクゴルフ協会,ディスクゴルフ,静岡県,',
   }}},
   { path: 'about', component: AboutComponent, data: { metaDescription: {
-      title: '当ウェブサイトについて',
-      description: '静岡県ディスクゴルフ協会のウェブサイトについて',
+      title: '静岡県ディスクゴルフ協会について',
+      description: '静岡県ディスクゴルフ協会',
       keywords: '静岡県ディスクゴルフ協会,ディスクゴルフ,静岡県,ウェブサイト',
   }}},
   { path: 'privacy', component: PrivacyComponent, data: { metaDescription: {
-      title: 'プライバシー•ポリシーについて',
+      title: 'プライバシー•ポリシー',
       description: '静岡県ディスクゴルフ協会のプライバシー•ポリシー',
       keywords: '静岡県ディスクゴルフ協会,ディスクゴルフ,静岡県,プライバシーポリシー',
   }}},
@@ -62,8 +62,8 @@ const routes: Routes = [
     category: 'whatsdiscgolf',
     metaDescription: {
       title: 'ディスクゴルフってなに?',
-      description: 'ディスクゴルフを紹介します',
-      keywords: '静岡県ディスクゴルフ協会,ディスクゴルフ,静岡県,ディスクゴルフの紹介',
+      description: '誰でもすぐに, そして楽しく遊べるスポーツです',
+      keywords: '静岡県ディスクゴルフ協会,ディスクゴルフ,静岡県,ディスクゴルフ紹介',
     }
   }},
   { path: 'letsplaydiscgolf', component: VideosComponent, data: {
@@ -104,7 +104,7 @@ const routes: Routes = [
     category: 'letsplaydiscgolf',
     metaDescription: {
       title: 'ディスクゴルフ入門',
-      description: 'ビデオ講座によるディスクゴルフ入門',
+      description: '日本チャンピオンによるディスクゴルフ•ビデオ•レッスン',
       keywords: '静岡県ディスクゴルフ協会,ディスクゴルフ,静岡県,ディスクゴルフ入門,ビデオ講座',
     }
   }},
@@ -165,13 +165,13 @@ const routes: Routes = [
     category: 'majors',
     metaDescription: {
       title: 'これがプロの世界だ!',
-      description: '全てのプロディスクゴルファーが目指すメジャー大会の紹介',
+      description: '全てのプロ•ディスクゴルファーが憧れるメジャー大会の紹介',
       keywords: '静岡県ディスクゴルフ協会,ディスクゴルフ,静岡県,トップアスリート,世界,メジャー,大会',
     }
   }},
   { path: 'location', component: LocationComponent, data: { metaDescription: {
       title: 'コース案内',
-      description: '県内と近県のディスクゴルフコース情報です',
+      description: '県内と近県のディスクゴルフ•コース情報です',
       keywords: '静岡県ディスクゴルフ協会,ディスクゴルフ,静岡県,コース,ディスクゴルフコース',
   }}},
 ];
