@@ -30,6 +30,10 @@ Gitマスタ•ブランチへと更新内容を取り込んでください.
 $ ng deploy
 ```
 
+## 公開サーバ•アドレス
+
+* [https://jpdga-shizuoka.github.io/home](https://jpdga-shizuoka.github.io/home)
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
