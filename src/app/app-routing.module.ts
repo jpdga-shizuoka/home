@@ -75,18 +75,18 @@ const routes: Routes = [
                   </p>
                   <p>
                     そんなあなたは,
-                    日本チャンピオン菊地哲也プロによるビデオ•レッスンで,
+                    日本チャンピオンによるビデオ•レッスンで,
                     さらに上達の階段を登っていってください.
                   </p>
                   <p>
                     あわせて
                     <a target="_blank" rel="noopener" href="https://innova-hero.jp/discgolf/">
                       基本ルール
-                    </a>をチェックすればもう完璧.
+                    </a>をチェックすれば知識も十分.
                     さらにこちらのビデオ
                     <a target="_blank" rel="noopener" href="https://www.nhk.or.jp/kokokoza/tv/karada/archive/chapter001.html">
                       体を動かすTV
-                    </a>でダメ押しだ!
+                    </a>で実戦も完璧だ.
                   </p>
                   <div class="container">
                     <a class="my-next-button" href="thisisdiscgolf">
