@@ -30,6 +30,7 @@ import { GoGamesComponent } from './go-games/go-games.component';
 import { KoshukaiComponent } from './koshukai/koshukai.component';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { LocationComponent } from './location/location.component';
+import { FbComponent } from './fb/fb.component';
 
 
 @NgModule({
@@ -44,6 +45,7 @@ import { LocationComponent } from './location/location.component';
     KoshukaiComponent,
     PrivacyComponent,
     LocationComponent,
+    FbComponent,
   ],
   imports: [
     BrowserModule,
