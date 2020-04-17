@@ -1,31 +1,48 @@
-.content#dashboard {
+.dashboard {
   display: flex;
-  margin: 82px auto 32px;
-  padding: 0 16px;
-  max-width: 960px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.dashboard > .content {
+  display: flex;
+  /* margin: 82px auto 32px; */
+  padding: 0;
+  /* width: 500px; */
+  max-width: 800px;
   flex-direction: column;
   align-items: center;
 }
-.content#dashboard mat-icon {
-  margin-right: 6px;
+.plugin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* width: 100%; */
 }
-.content#dashboard p {
+.content > .title {
+  margin: 40px auto 40px;
   text-align: center;
+}
+.title > span {
+  display: inline-block;
+}
+.dashboard > .content mat-icon {
+  margin-right: 6px;
 }
 #headline-photo img {
   height: 20vh;
   width: 100%;
   overflow: hidden;
   object-fit: cover;
+  padding: 0;
+  margin: 0;
 }
-
 .card-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 16px;
+  margin-right: 8px;
 }
-
 .card {
   border-radius: 4px;
   border: 1px solid #eee;
@@ -34,65 +51,42 @@
   width: 200px;
   margin: 0 8px 16px;
   padding: 16px;
-  display: flex;
-  flex-direction: row;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   transition: all 0.2s ease-in-out;
   line-height: 24px;
-}
-
-.card-container .card:not(:last-child) {
-  margin-right: 0;
-}
-
-.card.card-small {
-  height: 16px;
-  width: 168px;
-}
-
-.card-container .card:not(.highlight-card) {
   cursor: pointer;
 }
-
-.card-container .card:not(.highlight-card):hover {
+.card-container .card:not(:last-child) {
+  /* margin-right: 0; */
+}
+.card-container .card:hover {
   transform: translateY(-3px);
   box-shadow: 0 4px 17px rgba(black, 0.35);
 }
-
-.card.highlight-card {
-  background-color: #1976d2;
-  color: white;
-  font-weight: 600;
-  border: none;
-  width: auto;
-  min-width: 30%;
-  position: relative;
+@media screen and (max-width: 1269px) {
+  .dashboard > .content {
+    max-width: 600px;
+  }
 }
-
-.card.card.highlight-card span {
-  margin-left: 60px;
+@media screen and (max-width: 1024px) {
+  .dashboard > .content {
+    max-width: 500px;
+  }
 }
-
-/* Responsive Styles */
 @media screen and (max-width: 767px) {
-
-  .card-container > *:not(.circle-link) ,
-  .terminal {
-    width: 100%;
-  }
-
-  .card:not(.highlight-card) {
-    height: 16px;
-    margin: 8px 0;
-  }
-
-  .card.highlight-card span {
-    margin-left: 72px;
-  }
 }
 @media screen and (max-width: 414px) {
-  .content#dashboard {
+  .card-container > * {
+    width: 100%;
+    margin: 8px;
+  }
+  .dashboard > .content {
     margin: 40px auto 40px;
+  }
+  .card {
+    height: 16px;
+    margin: 8px 8px;
   }
 }

@@ -1,0 +1,6 @@
+.fb-placeholder {
+  display: block;
+  width: 300px;
+  height: calc(80vh - 64px);
+  background-color: transparent;
+}

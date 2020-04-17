@@ -1,3 +1,5 @@
+![Build and Deploy](https://github.com/jpdga-shizuoka/home/workflows/Build%20and%20Deploy/badge.svg)
+
 ## はじめに
 
 静岡県ディスクゴルフ協会が公開するウェブサイト•プロジェクトです.
@@ -27,6 +29,10 @@ Gitマスタ•ブランチへと更新内容を取り込んでください.
 ```
 $ ng deploy
 ```
+
+## 公開サーバ•アドレス
+
+* [https://jpdga-shizuoka.github.io/home](https://jpdga-shizuoka.github.io/home)
 
 ## Development server
 

@@ -1,10 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NavigationComponent } from './navigation/navigation.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { YouTubePlayerModule } from '@angular/youtube-player';
 
@@ -23,6 +19,9 @@ import { MatTabsModule } from '@angular/material/tabs';
 
 import { DeviceDetectorModule } from 'ngx-device-detector';
 
+import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module';
+import { NavigationComponent } from './navigation/navigation.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { VideoSheetComponent } from './video-sheet.component';
 import { AboutComponent } from './about/about.component';
@@ -31,6 +30,7 @@ import { GoGamesComponent } from './go-games/go-games.component';
 import { KoshukaiComponent } from './koshukai/koshukai.component';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { LocationComponent } from './location/location.component';
+import { FbComponent } from './fb/fb.component';
 
 
 @NgModule({
@@ -45,6 +45,7 @@ import { LocationComponent } from './location/location.component';
     KoshukaiComponent,
     PrivacyComponent,
     LocationComponent,
+    FbComponent,
   ],
   imports: [
     BrowserModule,
