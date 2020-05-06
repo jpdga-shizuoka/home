@@ -1,2 +1,11 @@
 User-agent : *
+Disallow : /whatsdiscgolf
+Disallow : /letsplaydiscgolf
+Disallow : /thisisdiscgolf
+Disallow : /majors
+Disallow : /gogames
+Disallow : /location
+Disallow : /koshukai
+Disallow : /about
+Disallow : /privacy
 Sitemap : https://jpdga-shizuoka.github.io/home/sitemap.xml
