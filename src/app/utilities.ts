@@ -43,7 +43,10 @@ function updateDescription(mdo: MetaDescription, data?: any): void {
   }
   const md = data.metaDescription as MetaData;
   const url = window.location.protocol + '//' + window.location.host;
-  const image = url + environment.projectPathName + '/assets/img/shizuoka-jpdga.002.png';
+  const image = url
+    + environment.projectPathName
+    + '/assets/img/'
+    + (md.image || 'shizuoka-jpdga.002.png');
   const href = url + window.location.pathname;
   mdo.ngTitle.setTitle(md.title);
   mdo.ngMeta.updateTag({ name: 'description', content: md.description });
@@ -51,7 +54,7 @@ function updateDescription(mdo: MetaDescription, data?: any): void {
   mdo.ngMeta.updateTag({ property: 'og:title', content: md.title });
   mdo.ngMeta.updateTag({ property: 'og:type', content: md.type || 'website' });
   mdo.ngMeta.updateTag({ property: 'og:url', content: md.url || href });
-  mdo.ngMeta.updateTag({ property: 'og:image', content: md.image || image});
+  mdo.ngMeta.updateTag({ property: 'og:image', content: image});
   if (md.keywords) {
     mdo.ngMeta.updateTag({ name: 'keywords', content: md.keywords });
   }

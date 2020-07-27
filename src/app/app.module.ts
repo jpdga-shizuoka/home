@@ -31,6 +31,8 @@ import { KoshukaiComponent } from './koshukai/koshukai.component';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { LocationComponent } from './location/location.component';
 import { FbComponent } from './fb/fb.component';
+import { SporecComponent } from './sporec/sporec.component';
+import { OyakoComponent } from './oyako/oyako.component';
 
 
 @NgModule({
@@ -46,6 +48,8 @@ import { FbComponent } from './fb/fb.component';
     PrivacyComponent,
     LocationComponent,
     FbComponent,
+    SporecComponent,
+    OyakoComponent,
   ],
   imports: [
     BrowserModule,

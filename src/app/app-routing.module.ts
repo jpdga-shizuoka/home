@@ -8,6 +8,8 @@ import { GoGamesComponent } from './go-games/go-games.component';
 import { KoshukaiComponent } from './koshukai/koshukai.component';
 import { VideosComponent } from './videos/videos.component';
 import { LocationComponent } from './location/location.component';
+import { SporecComponent } from './sporec/sporec.component';
+import { OyakoComponent } from './oyako/oyako.component';
 
 const routes: Routes = [
   { path: '', component: DashboardComponent, data: { metaDescription: {
@@ -173,6 +175,18 @@ const routes: Routes = [
       title: 'コース案内',
       description: '静岡県内と近県のディスクゴルフ•コース情報です',
       keywords: '静岡県ディスクゴルフ協会,ディスクゴルフ,静岡県,コース,ディスクゴルフコース',
+  }}},
+  { path: 'sporec', component: SporecComponent, data: { metaDescription: {
+      title: '県民スポーツ•レクリエーション祭',
+      description: '第27回 県民スポーツ•レクリエーション祭ご案内, 申込書',
+      keywords: '静岡県ディスクゴルフ協会,ディスクゴルフ,静岡県,スポレク祭',
+      image: 'sporec.jpg',
+  }}},
+  { path: 'oyako', component: OyakoComponent, data: { metaDescription: {
+      title: '親子ディスクゴルフ大会',
+      description: '富士山こどもの国,8月の限定イベント',
+      keywords: '静岡県ディスクゴルフ協会,ディスクゴルフ,静岡県,親子大会',
+      image: 'sport-rec.jpg',
   }}},
 ];
 

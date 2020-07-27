@@ -1,0 +1,15 @@
+
+.content table td:nth-child(1) {
+  width: 7rem;
+  text-align: center;
+  vertical-align: top;
+}
+
+.content table td ul {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.description img {
+  width: 100%;
+}
