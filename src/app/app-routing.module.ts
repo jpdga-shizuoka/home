@@ -182,12 +182,6 @@ const routes: Routes = [
       keywords: '静岡県ディスクゴルフ協会,ディスクゴルフ,静岡県,スポレク祭',
       image: 'sporec.jpg',
   }}},
-  { path: 'oyako', component: OyakoComponent, data: { metaDescription: {
-      title: '親子ディスクゴルフ大会',
-      description: '富士山こどもの国,8月の限定イベント',
-      keywords: '静岡県ディスクゴルフ協会,ディスクゴルフ,静岡県,親子大会',
-      image: 'sport-rec.jpg',
-  }}},
 ];
 
 @NgModule({

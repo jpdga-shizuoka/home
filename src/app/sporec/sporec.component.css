@@ -1,6 +1,6 @@
 
 .content table td:nth-child(1) {
-  width: 7rem;
+  width: 6rem;
   text-align: center;
   vertical-align: top;
 }
@@ -12,4 +12,8 @@
 
 .description img {
   width: 100%;
+}
+
+.description p span {
+  font-weight: bold;
 }
