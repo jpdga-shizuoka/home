@@ -9,7 +9,6 @@ import { KoshukaiComponent } from './koshukai/koshukai.component';
 import { VideosComponent } from './videos/videos.component';
 import { LocationComponent } from './location/location.component';
 import { SporecComponent } from './sporec/sporec.component';
-import { OyakoComponent } from './oyako/oyako.component';
 
 const routes: Routes = [
   { path: '', component: DashboardComponent, data: { metaDescription: {
