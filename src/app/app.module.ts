@@ -17,8 +17,6 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { MatTableModule } from '@angular/material/table';
 import { MatTabsModule } from '@angular/material/tabs';
 
-import { DeviceDetectorModule } from 'ngx-device-detector';
-
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { NavigationComponent } from './navigation/navigation.component';
@@ -67,7 +65,6 @@ import { SporecComponent } from './sporec/sporec.component';
     MatTableModule,
     MatTabsModule,
     MatBottomSheetModule,
-    DeviceDetectorModule.forRoot(),
   ],
   entryComponents: [
     VideoSheetComponent
