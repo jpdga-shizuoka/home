@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DeviceDetectorService } from 'ngx-device-detector';
 
 @Component({
   selector: 'app-dashboard',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent {
+  constructor(private deviceService: DeviceDetectorService) {
+  }
 
+  get isPluginEnabled(): boolean {
+    const device = this.deviceService.getDeviceInfo();
+    return device.browser != 'Safari' || device.os != 'iOS';
+  }
 }

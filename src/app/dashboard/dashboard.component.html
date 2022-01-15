@@ -35,9 +35,13 @@
       <span>試合に出よう!</span>
     </a>
 
+    <a class="card" href="https://www.facebook.com/shizuoka.dga" *ngIf="!isPluginEnabled">
+      <img src="assets/img/f_logo_RGB-Blue_144.png">
+      <span>県協会Facebookへ &#8658;</span>
+    </a>
   </div>
   </div>
-  <div class="plugin">
+  <div class="plugin" *ngIf="isPluginEnabled">
     <app-fb-page>
     </app-fb-page>
   </div>

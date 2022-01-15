@@ -5,9 +5,7 @@
 }
 .dashboard > .content {
   display: flex;
-  /* margin: 82px auto 32px; */
   padding: 0;
-  /* width: 500px; */
   max-width: 800px;
   flex-direction: column;
   align-items: center;
@@ -16,7 +14,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* width: 100%; */
 }
 .content > .title {
   margin: 40px auto 40px;
@@ -58,12 +55,14 @@
   line-height: 24px;
   cursor: pointer;
 }
-.card-container .card:not(:last-child) {
-  /* margin-right: 0; */
-}
 .card-container .card:hover {
   transform: translateY(-3px);
   box-shadow: 0 4px 17px rgba(black, 0.35);
+}
+.card img {
+  width: 24px;
+  height: 24px;
+  margin: 6px;
 }
 @media screen and (max-width: 1269px) {
   .dashboard > .content {
