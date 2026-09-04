@@ -20,14 +20,20 @@ GitHubの機能を使ってマスタ•ブランチへプル•リクエスト�
 1. GitHubの機能を使って上記プル•リクエストを受け付け,
 Gitマスタ•ブランチへと更新内容を取り込んでください.
 1. GitHubはマスタ•ブランチが更新されるたびに,
-公開サーバを新しいコンテンツで更新します.
+GitHub Actionsを使って公開サーバを新しいコンテンツで更新します.
 
 ## 公開サーバの更新補足
 
-マスタ•ブランチへコミットすることで, 公開サーバは自動的に更新されますが,
-手動で更新したい場合, 以下の通りです.
+マスタ•ブランチへコミットすると公開サーバは自動的に更新されます.
+手動で再実行したい場合は, GitHubのActions画面で
+`Build and Deploy`ワークフローの`Run workflow`を実行してください.
+
+ローカルのNode.jsはAngular 13が対応しているバージョンに合わせています.
+Node Version Managerを使用する場合は, 依存関係をインストールする前に
+以下を実行してください.
 ```
-$ ng deploy
+$ nvm use
+$ npm ci
 ```
 
 ## 公開サーバ•アドレス
@@ -40,7 +46,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use `npm run build -- --configuration production` for a production build.
 
 ## Running unit tests
 
