@@ -176,9 +176,9 @@ const routes: Routes = [
       keywords: '静岡県ディスクゴルフ協会,ディスクゴルフ,静岡県,コース,ディスクゴルフコース',
   }}},
   { path: 'sporec', component: SporecComponent, data: { metaDescription: {
-      title: '県民スポーツ•レクリエーション祭',
-      description: '第27回 県民スポーツ•レクリエーション祭ご案内, 申込書',
-      keywords: '静岡県ディスクゴルフ協会,ディスクゴルフ,静岡県,スポレク祭',
+      title: '第33回県民スポーツ・レクリエーション祭',
+      description: '2026年9月20日に富士山こどもの国で開催するディスクゴルフ大会のご案内',
+      keywords: '静岡県ディスクゴルフ協会,ディスクゴルフ,静岡県,スポレク祭,富士山こどもの国',
       image: 'sporec.jpg',
   }}},
 ];
