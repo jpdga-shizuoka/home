@@ -212,13 +212,6 @@
   margin-top: 32px;
 }
 
-.organizer-details summary {
-  padding: 12px 4px;
-  color: #512da8;
-  font-weight: 500;
-  cursor: pointer;
-}
-
 .back-link {
   margin-top: 36px;
   text-align: center;
@@ -232,6 +225,28 @@
   border-radius: 24px;
   background: white;
   color: #512da8;
+}
+
+.subsidy-notice {
+  margin-top: 48px;
+  padding-top: 28px;
+  border-top: 1px solid #d1c4e9;
+  text-align: center;
+}
+
+.subsidy-notice img {
+  display: block;
+  width: 100%;
+  max-width: 560px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.subsidy-notice p {
+  margin: 18px 0 0;
+  color: #444;
+  font-size: 0.95rem;
+  line-height: 1.7;
 }
 
 @media screen and (max-width: 700px) {
@@ -271,5 +286,14 @@
   .award-list li {
     flex-direction: column;
     gap: 5px;
+  }
+
+  .subsidy-notice {
+    margin-top: 36px;
+    padding-top: 22px;
+  }
+
+  .subsidy-notice p {
+    font-size: 0.9rem;
   }
 }
