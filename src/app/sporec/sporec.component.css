@@ -45,6 +45,26 @@
   text-align: left;
 }
 
+.cancellation-notice {
+  margin-top: 24px;
+  padding: 20px;
+  border: 2px solid #b71c1c;
+  border-radius: 6px;
+  background: #fff4f4;
+  line-height: 1.8;
+}
+
+.cancellation-notice h2 {
+  margin: 0 0 12px;
+  color: #b71c1c;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.cancellation-notice p:last-child {
+  margin-bottom: 0;
+}
+
 .event-summary {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));

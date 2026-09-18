@@ -177,7 +177,7 @@ const routes: Routes = [
   }}},
   { path: 'sporec', component: SporecComponent, data: { metaDescription: {
       title: '第33回県民スポーツ・レクリエーション祭',
-      description: '2026年9月20日に富士山こどもの国で開催するディスクゴルフ大会のご案内',
+      description: '第33回県民スポーツ・レクリエーション祭ディスクゴルフ大会は、台風25号の影響で荒天が予想されるため2026年9月20日の開催を中止します。代替開催日は2026年11月1日（日）です。',
       keywords: '静岡県ディスクゴルフ協会,ディスクゴルフ,静岡県,スポレク祭,富士山こどもの国',
       image: 'sporec.jpg',
   }}},
